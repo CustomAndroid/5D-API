@@ -5,4 +5,5 @@
 * [POST /api/AppApi/updateNotice 30.通知公告已读](updateNotice.md)
 * [POST /api/AppApi/GetWarnings 79.获取项目预警列表](GetWarnings.md)
 * [POST /api/AppApi/GetRelevants 80.获取相关事项列表](GetRelevants.md)
+* [POST /api/AppApi/GetMessageNum 78.获取未读未处理消息数](GetMessageNum.md)
 

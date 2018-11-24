@@ -2,7 +2,7 @@
 
 * [POST /api/AppApi/getProjectInfo 项目基本信息](getProjectInfo.md)
 * [POST /api/AppApi/getBaseData 15.获取基础数据](getBaseData.md)
-* POST /api/AppApi/getOrganizatio 14.人员组织机构【废弃】
+* POST /api/AppApi/getOrganizatio 14.人员组织机构【废弃，使用下面`getOrganizatioNew`】
 * [POST /api/AppApi/getOrganizatioNew 人员组织机构](getOrganizatioNew.md)
 * [POST /api/AppApi/getSectionList 22.获取标段列表(树级结构 id-pId)](getSectionList.md)
 * [POST /api/AppApi/getConstUnitList 23.获取施工单位列表](getConstUnitList.md)

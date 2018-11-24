@@ -23,4 +23,5 @@
 * [业务功能](api/business/README.md)
 * [统计报表](api/chart/README.md)
 * [其他](api/other/README.md)
+	* [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 * [更新日志](log.md)

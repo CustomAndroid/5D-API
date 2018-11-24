@@ -1,3 +1,10 @@
 ## TODO
 
-[✔] test
+- [ ] initiate  
+- [ ] participate  
+- [ ] redeem  
+- [ ] refund  
+
+### doc  
+- [x] ReadMe
+

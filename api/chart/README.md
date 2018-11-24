@@ -4,6 +4,7 @@
     * 进度与计划完成比
     * 进度差异分析
     * 施工单位进度填报频次	
+
 * 成本相关
     * 收入统计
     * 收入历史统计
@@ -11,14 +12,19 @@
     * 支出历史统计
     * 利润统计对比
     * 利润历史对比
+
 * 问题相关
+
     * 问题统计分析报表
+
 * 安全相关
     * 危险源统计分析
     * 安全员跟踪统计分析
     * 危险源整改通知单报表​	
 
 * [材料相关](Material/README.md)
+    * [POST /api/AppApi/GetMaterialIinventoryStatistics 58.材料库存量统计](Material/GetMaterialIinventoryStatistics.md)
+    * [POST /api/AppApi/GetMaterialStockRecord 获取库存材料图标数据](Material/GetMaterialStockRecord.md)
 
 
 

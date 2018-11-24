@@ -6,7 +6,7 @@
 
 > 请求方式：POST
 >
-> 请求URL ：/token
+> 请求URL ：`/token`
 
 ### 2. 请求参数
 

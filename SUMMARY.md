@@ -18,3 +18,4 @@
 * [业务功能](api/business/README.md)
 * [统计报表](api/chart/README.md)
 * [其他](api/other/README.md)
+* [更新日志](log.md)

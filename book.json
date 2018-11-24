@@ -1,6 +1,6 @@
 {
-	"title": "js-tools",
-	"description": "js 工具集",
+	"title": "5D-API",
+	"description": "5D协同施工API",
 	"author": "Sogrey",
 	"output.name": "site",
 	"language": "zh-hans",
@@ -73,7 +73,7 @@
 		"mobi": "styles/mobi.css",
 		"epub": "styles/epub.css"
 	},
-	"github": "Sogrey/js-tools",
+	"github": "Sogrey/5D-API",
 	"pdf": {
 		"fontSize": 16
 	}

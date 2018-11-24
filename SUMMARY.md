@@ -22,10 +22,26 @@
 * [模型更新检查](api/bim/checkModels.md)
 * [业务功能](api/business/README.md)
 * [统计报表](api/chart/README.md)
+    * [进度相关](api/chart/Progress/README.md)
+        * 进度与计划完成比
+        * 进度差异分析
+        * 施工单位进度填报频次
+    * [成本相关](api/chart/Cost/README.md)
+        * 收入统计
+        * 收入历史统计
+        * 支出统计
+        * 支出历史统计
+        * 利润统计对比
+        * 利润历史对比
+    * [问题相关](api/chart/Problem/README.md)
+        * 问题统计分析报表
+    * [安全相关](api/chart/Safework/README.md)
+        * 危险源统计分析
+        * 安全员跟踪统计分析
+        * 危险源整改通知单报表
     * [材料相关](api/chart/Material/README.md)
         * [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
         * [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 * [其他](api/other/README.md)
   * [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 * [更新日志](log.md)
-

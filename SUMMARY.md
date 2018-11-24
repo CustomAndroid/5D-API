@@ -27,12 +27,12 @@
         * 进度差异分析
         * 施工单位进度填报频次
     * [成本相关](api/chart/Cost/README.md)
-        * 收入统计
-        * 收入历史统计
-        * 支出统计
-        * 支出历史统计
-        * 利润统计对比
-        * 利润历史对比
+        * [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
+        * [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
+        * [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
+        * [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
+        * [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
+        * [获取历史利润](api/chart/Cost/GetProfitHistory.md)
     * [问题相关](api/chart/Problem/README.md)
         * 问题统计分析报表
     * [安全相关](api/chart/Safework/README.md)

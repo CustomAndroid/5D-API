@@ -4,23 +4,19 @@
     * 进度与计划完成比
     * 进度差异分析
     * 施工单位进度填报频次	
-
 * [成本相关](Cost/README.md)
-    * 收入统计
-    * 收入历史统计
-    * 支出统计
-    * 支出历史统计
-    * 利润统计对比
-    * 利润历史对比
-
+    * [POST /api/AppApi/GetIncomeStatistics 38.获取当月收入](Cost/GetIncomeStatistics.md)
+    * [POST /api/AppApi/GetIncomeHistory 39.获取历史收入](Cost/GetIncomeHistory.md)
+    * [POST /api/AppApi/GetExpenditureStatistics 40.获取当月支出](Cost/GetExpenditureStatistics.md)
+    * [POST /api/AppApi/GetExpenditureHistory 41.获取历史支出](Cost/GetExpenditureHistory.md)
+    * [POST /api/AppApi/GetProfitStatistics 42.获取当月利润](Cost/GetProfitStatistics.md)
+    * [POST /api/AppApi/GetProfitHistory 43.获取历史利润](Cost/GetProfitHistory.md)
 * [问题相关](Problem/README.md)
     * 问题统计分析报表
-
 * [安全相关](Safework/README.md)
     * 危险源统计分析
     * 安全员跟踪统计分析
     * 危险源整改通知单报表
-
 * [材料相关](Material/README.md)
     * [POST /api/AppApi/GetMaterialIinventoryStatistics 58.材料库存量统计](Material/GetMaterialIinventoryStatistics.md)
     * [POST /api/AppApi/GetMaterialStockRecord 获取库存材料图标数据](Material/GetMaterialStockRecord.md)

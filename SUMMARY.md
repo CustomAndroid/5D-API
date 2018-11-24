@@ -22,9 +22,10 @@
 * [模型更新检查](api/bim/checkModels.md)
 * [业务功能](api/business/README.md)
 * [统计报表](api/chart/README.md)
-    * 材料相关
+    * [材料相关](api/chart/Material/README.md)
         * [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
         * [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 * [其他](api/other/README.md)
   * [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 * [更新日志](log.md)
+

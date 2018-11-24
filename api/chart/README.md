@@ -18,9 +18,7 @@
     * 安全员跟踪统计分析
     * 危险源整改通知单报表​	
 
-* 材料相关
-  *  [POST /api/AppApi/GetMaterialIinventoryStatistics 58.材料库存量统计](Material/GetMaterialIinventoryStatistics.md)
-  *  [POST /api/AppApi/GetMaterialStockRecord 获取库存材料图标数据](Material/GetMaterialStockRecord.md)
+* [材料相关](Material/README.md)
 
 
 

@@ -1,9 +1,9 @@
 ## TODO
 
-- [ ] initiate  
-- [ ] participate  
-- [ ] redeem  
-- [ ] refund  
+- [x] initiate  
+- [x] participate  
+- [x] redeem  
+- [x] refund  
 
 ### doc  
 - [x] ReadMe

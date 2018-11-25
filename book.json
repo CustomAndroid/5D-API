@@ -29,7 +29,7 @@
 		"theme-default": {
 		     "showLevel": true
 		},"fontsettings": {
-			"theme": "sepia",
+			"theme": "white",
 			"family": "serif",
 			"size":  1
 		},
@@ -61,8 +61,8 @@
 			]
 		},
 		"tbfed-pagefooter": {
-			"copyright": "Copyright &copy <a target='view_window' href='https://sogrey.github.io/'>Sogrey</a> 2018",
-			"modify_label": "该文件修订时间：",
+			"copyright": "Copyright &copy <a target='view_window' href='https://sogrey.github.io/'>Sogrey</a> 2018,",
+			"modify_label": "    最后修订时间：",
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		}
 	},

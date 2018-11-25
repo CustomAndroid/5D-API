@@ -6,7 +6,7 @@
 * [登录，修改密码](api/login/README.md)
     * [登录](api/login/login.md)
     * [修改密码](api/login/changePwd.md)
-* [项目基本数据](api/project/README.md)
+* [项目基础数据](api/project/README.md)
     * [项目基本信息](api/project/getProjectInfo.md)
     * [获取基础数据](api/project/getBaseData.md)
     * [人员组织机构](api/project/getOrganizatioNew.md)
@@ -34,7 +34,7 @@
         * [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
         * [获取历史利润](api/chart/Cost/GetProfitHistory.md)
     * [问题相关](api/chart/Problem/README.md)
-        * 问题统计分析报表
+        * [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
     * [安全相关](api/chart/Safework/README.md)
         * 危险源统计分析
         * 安全员跟踪统计分析

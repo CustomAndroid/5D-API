@@ -1,4 +1,4 @@
-## 项目基本数据
+## 项目基础数据
 
 * [POST /api/AppApi/getProjectInfo 项目基本信息](getProjectInfo.md)
 * [POST /api/AppApi/getBaseData 15.获取基础数据](getBaseData.md)

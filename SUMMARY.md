@@ -36,9 +36,9 @@
     * [问题相关](api/chart/Problem/README.md)
         * [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
     * [安全相关](api/chart/Safework/README.md)
-        * 危险源统计分析
-        * 安全员跟踪统计分析
-        * 危险源整改通知单报表
+        * [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
+        * [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
+        * [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
     * [材料相关](api/chart/Material/README.md)
         * [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
         * [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)

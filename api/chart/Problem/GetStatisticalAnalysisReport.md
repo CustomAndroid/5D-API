@@ -18,9 +18,9 @@ body:
 | **projectId** |  String  |  Y   | 项目ID                                                       |
 | **startTime** |  String  |  Y   | 开始时间                                                     |
 | **endTime**   |  String  |  Y   | 截止时间                                                     |
-| **unit**      |  String  |  Y   | 施工单位                                                     |
-| **qType**     |  String  |  Y   | 问题类型 ([getBaseData](../../project/getBaseData.md)中类型为`QualityProblemType`) |
-| **UserType**  |  String  |  Y   | 用户类型（从[login](../../login/login.md)获得）              |
+| **unit**      |  String  |  N   | 施工单位                                                     |
+| **qType**     |  String  |  N   | 问题类型 ([getBaseData](../../project/getBaseData.md)中类型为`QualityProblemType`) |
+| **UserType**  |  String  |  N   | 用户类型（从[login](../../login/login.md)获得）              |
 
 示例:
 

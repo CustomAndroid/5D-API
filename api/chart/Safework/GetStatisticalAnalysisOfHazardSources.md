@@ -17,9 +17,9 @@ body:
 | **projectId** |  String  |  Y   | 项目ID     |
 | **startTime** |  String  |  Y   | 开始时间   |
 | **endTime**   |  String  |  Y   | 结束时间   |
-| **userId**    |  String  |  Y   | 用户ID     |
-| **unit**      |  String  |  Y   | 施工单位ID |
-| **UserType**  |  String  |  Y   | 用户类型   |
+| **userId**    |  String  |  N   | 用户ID     |
+| **unit**      |  String  |  N   | 施工单位ID |
+| **UserType**  |  String  |  N   | 用户类型   |
 
 示例:
 

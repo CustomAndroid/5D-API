@@ -54,7 +54,13 @@ var MonthTotalZ = decimal.Parse(item.MonthListvalue.ToString()) - decimal.Parse(
 var AccTotalZ = decimal.Parse(item.AccListvalue.ToString()) - decimal.Parse(item.AccVisaFee.ToString());//累计账面利润 = AccListvalue-AccVisaFee
 ```
 
-
+> 当月账面利润 = 当月账面收入  - 当月支出
+>
+> 当月实际利润 = 当月实际收入  - 当月支出
+>
+> 累计账面利润 = 累计账面收入  - 累计支出
+>
+> 累计实际利润 = 累计实际收入  - 累计支出
 
 返回示例：
 

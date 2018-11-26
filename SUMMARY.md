@@ -23,9 +23,11 @@
 * [业务功能](api/business/README.md)
 * [统计报表](api/chart/README.md)
     * [进度相关](api/chart/Progress/README.md)
-        * 进度与计划完成比
-        * 进度差异分析
-        * 施工单位进度填报频次
+        * [进度与计划完成比](api/chart/Progress/GetScheduleCompletionRatio.md)
+        * [进度与计划完成比 – 图表数据](api/chart/Progress/GetScheduleCompletionRatioCharts.md)
+        * [进度差异分析](api/chart/Progress/GetScheduleVarianceAnalysis.md)
+        * [进度差异分析报表 – 图表数据](api/chart/Progress/GetScheduleVarianceAnalysisCharts.md)
+        * [施工单位进度填报频次](api/chart/Progress/GetUnitFrequencyOfFilling.md)
     * [成本相关](api/chart/Cost/README.md)
         * [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
         * [获取历史收入](api/chart/Cost/GetIncomeHistory.md)

@@ -22,6 +22,33 @@
 * [电子沙盘](api/bim/README.md)
     * [模型更新检查](api/bim/checkModels.md)
 * [业务功能](api/business/README.md)
+    * [资料管理](api/business/DocumentMng/README.md)
+        * 资料查询
+    * [进度管理](api/business/Progress/README.md)
+        * 计划查询
+        * 进度填报 
+        * 进度填报审核
+        * 施工日志填报 
+    * [安全管理](api/business/SafeWork/README.md)
+        * 危险源识别审核，反馈
+        * 危险源识别台账
+        * 危险源监控跟踪
+        * 安全隐患整改审核，反馈
+        * 安全隐患整改台账
+    * [问题管理](api/business/Problem/README.md)
+        * 问题查询
+        * 问题填报
+        * 问题审核
+    * [材料管理](api/business/MaterialMng/README.md) 
+        * 采购台账
+        * 采购登记
+        * 领用台账   
+        * 领用登记
+    * [成本管理](api/business/CostMng/README.md)
+        * 合同查询
+        * 验工计价
+        * 变更查询
+        * 签证查询
 * [统计报表](api/chart/README.md)
     * [进度相关](api/chart/Progress/README.md)
         * [进度与计划完成比](api/chart/Progress/GetScheduleCompletionRatio.md)

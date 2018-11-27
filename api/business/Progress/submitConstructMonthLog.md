@@ -23,9 +23,9 @@ body:
 | **weather**               | **String** |  Y   | 天气                                                         |
 | **equipmentNum**          | **String** |  Y   | 施工机具                                                     |
 | **UserNum**               | **String** |  Y   | 施工总人数                                                   |
-| **SituationShow**         | **String** |  N   | 施工情况                                                     |
-| **equipmentShwo**         | **String** |  N   | 设备使用情况                                                 |
-| **Situation**             | **String** |  N   | 施工总结评估                                                 |
+| **SituationShow**         | **String** |  Y   | 施工情况                                                     |
+| **equipmentShwo**         | **String** |  Y   | 设备使用情况                                                 |
+| **Situation**             | **String** |  Y   | 施工总结评估                                                 |
 | **problem**               | **String** |  N   | 施工存在问题                                                 |
 | **SafetyShow**            | **String** |  N   | 安全质量情况                                                 |
 | **fileList**              | **String** |  N   | 附件(文件名:描述,文件名:描述)                                |

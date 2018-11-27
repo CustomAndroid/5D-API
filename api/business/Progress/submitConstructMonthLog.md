@@ -67,8 +67,8 @@ logDetailsModelList 字段格式如下
         "RUserNum": "103", 
         "REquipMent": "12", 
         "CompletePercent": "100.00", 
-        "Type": "1", 
-        "IsDelete": false //新建的此项为true
+        "Type": "1", //计划内为1，新建的此项为2
+        "IsDelete": false //计划内为false，新建的此项为true
     }
 ]
 ```

@@ -11,22 +11,25 @@
 ### 2. 请求参数
 
 body:
-| **userId**                | **String** | Y    | 用户ID（填报人ID）                                           |
-| ------------------------- | ---------- | ---- | ------------------------------------------------------------ |
-| **projectId**             | **String** | Y    | 项目ID(审核人)                                               |
-| **ConstructUnitId**       | **String** | Y    | 施工单位ID                                                   |
-| **checkDate**             | **String** | Y    | 查询日期（yyyy-MM-dd）                                       |
-| **ConstructionSpecialty** | **String** | Y    | 施工专业                                                     |
-| **weather**               | **String** | Y    | 天气                                                         |
-| **equipmentNum**          | **String** | Y    | 施工机具                                                     |
-| **UserNum**               | **String** | Y    | 施工总人数                                                   |
-| **SituationShow**         | **String** | N    | 施工情况                                                     |
-| **equipmentShwo**         | **String** | N    | 设备使用情况                                                 |
-| **Situation**             | **String** | N    | 施工总结评估                                                 |
-| **problem**               | **String** | N    | 施工存在问题                                                 |
-| **SafetyShow**            | **String** | N    | 安全质量情况                                                 |
-| **fileList**              | **String** | N    | 附件(文件名:描述,文件名:描述)                                |
-| **logDetailsModelList**   | **String** | Y    | 施工部位列表(json字符串),包括(计划内、计划外)： 施工部位 计划时间段 计划人数 计划设备 实际人数 设备数量 累计完成百分比 |
+
+
+
+| **userId**                | **String** |  Y   | 用户ID（填报人ID）                                           |
+| ------------------------- | ---------- | :--: | ------------------------------------------------------------ |
+| **projectId**             | **String** |  Y   | 项目ID(审核人)                                               |
+| **ConstructUnitId**       | **String** |  Y   | 施工单位ID                                                   |
+| **checkDate**             | **String** |  Y   | 查询日期（yyyy-MM-dd）                                       |
+| **ConstructionSpecialty** | **String** |  Y   | 施工专业                                                     |
+| **weather**               | **String** |  Y   | 天气                                                         |
+| **equipmentNum**          | **String** |  Y   | 施工机具                                                     |
+| **UserNum**               | **String** |  Y   | 施工总人数                                                   |
+| **SituationShow**         | **String** |  N   | 施工情况                                                     |
+| **equipmentShwo**         | **String** |  N   | 设备使用情况                                                 |
+| **Situation**             | **String** |  N   | 施工总结评估                                                 |
+| **problem**               | **String** |  N   | 施工存在问题                                                 |
+| **SafetyShow**            | **String** |  N   | 安全质量情况                                                 |
+| **fileList**              | **String** |  N   | 附件(文件名:描述,文件名:描述)                                |
+| **logDetailsModelList**   | **String** |  Y   | 施工部位列表(json字符串),包括(计划内、计划外)： 施工部位 计划时间段 计划人数 计划设备 实际人数 设备数量 累计完成百分比 |
 
 示例:
 

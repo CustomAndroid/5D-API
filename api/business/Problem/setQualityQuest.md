@@ -25,7 +25,7 @@ body:
 | **sendTo**        |  String  |  Y   | 发送人，仅一人  ,以`id#name`的格式                           |
 | **copyTo**        |  String  |  N   | 抄送人，可多人，以`id#name,id#name`的格式                    |
 | **LableLocation** |  String  |  N   | 标签                                                         |
-| **FileLists**     |  String  |  N   | 附件，以`附件1:附件1的描述,附件2:附件2的描述`的格式返回，多个附件`,`间隔，附件名与其描述`:`间隔,附件ftp上传，文件名传ftp上文件相对路径，上传成功后，使用[login](../../login/login.md)中 `WebNetIPAndPort`拼接上提交的文件相对路径能打开即为成功上传，比如你提交附件数据为 `ftpFile/pic.jpg:图片描述`，图片上传到ftp根目录`ftpFile`文件夹下，命名为`pic.jpg`,`WebNetIPAndPort`路径假如是`http://110.120.119.121:8090/`,那么图片完整访问地址是`http://110.120.119.121:8090/ftpFile/pic.jpg` |
+| **FileLists**     |  String  |  N   | 附件，以`附件1:附件1的描述,附件2:附件2的描述`的格式返回，多个附件`,`间隔，附件名与其描述`:`间隔,附件ftp上传，文件名传ftp上文件相对路径，上传成功后，使用[login](../../login/login.md)中 `WebNetIPAndPort`拼接上提交的文件相对路径能打开即为成功上传，比如你提交附件数据为 `/uploadFile/attachment/EF_20181127_153853409.png:图片描述`，图片上传到ftp根目录`/uploadFile/attachment/`目录下，命名为`EF_20181127_153853409.png`,`WebNetIPAndPort`路径假如是`http://110.120.119.121:8090/`,那么图片完整访问地址是`http://110.120.119.121:8090/uploadFile/attachment/EF_20181127_153853409.png` |
 | **TempId**        |  String  |  N   | android上用来标识一个临时ID，数据不会入库，提交成功后原样返回，以区分那个问题的提交 |
 | **Viewpoint**     |  String  |  N   | 视点                                                         |
 

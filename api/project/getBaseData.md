@@ -32,7 +32,7 @@ body:
 | --------- | :------: | ------------------------------------------------------------ |
 | **id**    |  string  | ID                                                           |
 | **value** |  String  | 名称                                                         |
-| **type**  |  String  | 数据类型：`QualityProblemType`-质量问题类别，`QualityProblemLevel`-质量问题严重程度,`ContractMode`-合同模式,`QualityProcessingResults`-审核意见同意不同意,`MaterialUnit`-材料单位列表 |
+| **type**  |  String  | 数据类型：`QualityProblemType`-质量问题类别，`QualityProblemLevel`-质量问题严重程度,`ContractMode`-合同模式,`QualityProcessingResults`-审核意见同意不同意,`MaterialUnit`-材料单位列表，`Weather` - 天气，`ConstructionMajor`-施工专业 |
 
 返回示例：
 

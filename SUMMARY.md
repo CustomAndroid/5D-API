@@ -36,9 +36,9 @@
         * 安全隐患整改审核，反馈
         * 安全隐患整改台账
     * [问题管理](api/business/Problem/README.md)
-        * 问题查询
-        * 问题填报
-        * 问题审核
+        * [问题列表](api/business/Problem/getQualityQuesList.md)
+        * [问题审核列表](api/business/Problem/getQualityQuesApplList.md)
+        * [问题提报](api/business/Problem/setQualityQuest.md)
     * [材料管理](api/business/MaterialMng/README.md) 
         * 采购台账
         * 采购登记

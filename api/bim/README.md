@@ -1,11 +1,5 @@
 ## 电子沙盘
 
 * [模型更新检查](checkModels.md)
-
-
-
-
-
-
-
-POST /api/AppApi/ModelGuidData
+* [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
+* [查询指定构件ID的属性信息](ModelGuidData.md)

@@ -1,7 +1,9 @@
 ## 业务功能
 
 1. [资料管理](DocumentMng/README.md)
-   1. 资料查询
+   1. [POST /api/AppApi/ProjectFileTree  获取资料分类](ProjectFileTree.md)
+   2. [POST /api/AppApi/ProjectFileList 获取项目资料列表](ProjectFileList.md)
+   3. [POST /api/AppApi/ModelFileList FileAttributive:1标示项目资料，2标示构件资料](ModelFileList.md)
 2. [进度管理](Progress/README.md)
    1. 计划查询
    2. 进度填报 
@@ -14,16 +16,16 @@
    4. 安全隐患整改审核，反馈
    5. 安全隐患整改台账
 4. [问题管理](Problem/README.md)
-   1. [POST /api/AppApi/getQualityQuesList 16.查询问题列表](getQualityQuesList.md)
-   2. [POST /api/AppApi/getQualityQuesApplList 16.查询问题审核列表](getQualityQuesApplList.md)
-   3. [POST /api/AppApi/setQualityQuest 18.问题提报](setQualityQuest.md)
-   4. [POST /api/AppApi/getQualityCheckProcess 17.问题审批处理进度](getQualityCheckProcess.md)
+   1. [POST /api/AppApi/getQualityQuesList 16.查询问题列表](Problem/getQualityQuesList.md)
+   2. [POST /api/AppApi/getQualityQuesApplList 16.查询问题审核列表](Problem/getQualityQuesApplList.md)
+   3. [POST /api/AppApi/setQualityQuest 18.问题提报](Problem/setQualityQuest.md)
+   4. [POST /api/AppApi/getQualityCheckProcess 17.问题审批处理进度](Problem/getQualityCheckProcess.md)
    5. POST /api/AppApi/setQualityQuestFJ 19.质量问题提报（附件） --- 【废弃】
    6. POST /api/AppApi/getQualityQuestChart 20.质量问题分析报表-问题分析 --- 【废弃】
    7. POST /api/AppApi/getQualityQuestChartByUnit 21.质量问题分析报表 --- 【废弃】
-   8. [POST /api/AppApi/auditingQualityQues 34.质量问题审核;IsFirst:0代表关闭，1代表审核提交](auditingQualityQues.md)
+   8. [POST /api/AppApi/auditingQualityQues 34.质量问题审核;IsFirst:0代表关闭，1代表审核提交](Problem/auditingQualityQues.md)
    9. POST /api/AppApi/getQualityQuesListItem  根据问题ID获取问题详情 --- 【此接口暂时无用且返回有问题】
-   10. [POST /api/AppApi/GetProblemsByGuid 36根据构件ID查询该构件相关的问题列表](GetProblemsByGuid.md)
+   10. [POST /api/AppApi/GetProblemsByGuid 36根据构件ID查询该构件相关的问题列表](Problem/GetProblemsByGuid.md)
 5. [材料管理](MaterialMng/README.md) 
    1. 采购台账
    2. 采购登记

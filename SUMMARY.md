@@ -23,9 +23,9 @@
     * [模型更新检查](api/bim/checkModels.md)
 * [业务功能](api/business/README.md)
     * [资料管理](api/business/DocumentMng/README.md)
-      * [获取资料分类](ProjectFileTree.md)
-      * [获取项目资料列表](ProjectFileList.md)
-      * [查询指定构件相关资料](ModelFileList.md)
+      * [获取资料分类](api/business/DocumentMng/ProjectFileTree.md)
+      * [获取项目资料列表](api/business/DocumentMng/ProjectFileList.md)
+      * [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
     * [进度管理](api/business/Progress/README.md)
         * 计划查询
         * 进度填报 

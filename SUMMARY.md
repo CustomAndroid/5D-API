@@ -37,9 +37,12 @@
         * 安全隐患整改审核，反馈
         * 安全隐患整改台账
     * [问题管理](api/business/Problem/README.md)
-        * [问题列表](api/business/Problem/getQualityQuesList.md)
-        * [问题审核列表](api/business/Problem/getQualityQuesApplList.md)
+        * [查询问题列表](api/business/Problem/getQualityQuesList.md)
+        * [查询问题审核列表](api/business/Problem/getQualityQuesApplList.md)
         * [问题提报](api/business/Problem/setQualityQuest.md)
+        * [问题审批处理进度](api/business/Problem/getQualityCheckProcess.md)
+        * [问题审核;IsFirst:0代表关闭，1代表审核提交](api/business/Problem/auditingQualityQues.md)
+        * [根据构件ID查询该构件相关的问题列表](api/business/Problem/GetProblemsByGuid.md)
     * [材料管理](api/business/MaterialMng/README.md) 
         * 采购台账
         * 采购登记

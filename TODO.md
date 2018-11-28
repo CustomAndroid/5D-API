@@ -87,19 +87,3 @@ POST /api/AppApi/getQueryStaticData 1:未处理;2:正在处理;3:已完成
 POST /api/AppApi/GetProfessionalType 37.获取模型专业类型 树级结构
 
 
-
-
-
-
-
-## collapsible markdown?
-
-
-<details>
-<summary>View contents</summary>
-
-* [`all`](#all)
-* [`allEqual`](#allequal)
-* [`any`](#any)
-
-</details>

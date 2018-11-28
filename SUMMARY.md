@@ -21,7 +21,7 @@
     * [获取未读未处理消息数](api/message/GetMessageNum.md)
 * [电子沙盘](api/bim/README.md)
     * [模型更新检查](api/bim/checkModels.md)
-    * [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
+    * 查询指定构件相关资料-见`业务功能`>`资料管理`
     * [查询指定构件ID的属性信息](api/bim/ModelGuidData.md)
 * [业务功能](api/business/README.md)
     * [资料管理](api/business/DocumentMng/README.md)

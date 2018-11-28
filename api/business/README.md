@@ -1,9 +1,9 @@
 ## 业务功能
 
 1. [资料管理](DocumentMng/README.md)
-   1. [POST /api/AppApi/ProjectFileTree  获取资料分类](ProjectFileTree.md)
-   2. [POST /api/AppApi/ProjectFileList 获取项目资料列表](ProjectFileList.md)
-   3. [POST /api/AppApi/ModelFileList FileAttributive:1标示项目资料，2标示构件资料](ModelFileList.md)
+   1. [POST /api/AppApi/ProjectFileTree  获取资料分类](DocumentMng/ProjectFileTree.md)
+   2. [POST /api/AppApi/ProjectFileList 获取项目资料列表](DocumentMng/ProjectFileList.md)
+   3. [POST /api/AppApi/ModelFileList FileAttributive:1标示项目资料，2标示构件资料](DocumentMng/ModelFileList.md)
 2. [进度管理](Progress/README.md)
    1. 计划查询
    2. 进度填报 

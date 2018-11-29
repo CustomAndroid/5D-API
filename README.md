@@ -32,34 +32,20 @@
          3. [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
       2. [进度管理](api/business/Progress/README.md)
 
-          施工计划：
-
-            1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
-
+          ​	施工计划：
+             1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
           进度填报：
-
-         1. [获取进度日志填报](api/business/Progress/getPlanProgressInfo.md)
-
-         2. [提交施工日志](api/business/Progress/setPlanSubmitHistory.md)
-
-         3. [获取进度审核列表](api/business/Progress/GetPlanApplData.md)
-
-         4. [根据ID获取进度填报](api/business/Progress/getPlanLogById.md)
-
-         5. [根据ID获取进度审核详情](api/business/Progress/getProgressVerifyLogById.md)
-
-         6. [根据FlowId 查询施工日志审批流程](api/business/Progress/getFlowInfoLogByLogID.md)
-
-         7. [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
-
-         施工日志：
-
-         1. [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
-
-         2. [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
-
-         3. [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
-
+             1. [获取进度日志填报](api/business/Progress/getPlanProgressInfo.md)
+             2. [提交施工日志](api/business/Progress/setPlanSubmitHistory.md)
+             3. [获取进度审核列表](api/business/Progress/GetPlanApplData.md)
+             4. [根据ID获取进度填报](api/business/Progress/getPlanLogById.md)
+             5. [根据ID获取进度审核详情](api/business/Progress/getProgressVerifyLogById.md)
+             6. [根据FlowId 查询施工日志审批流程](api/business/Progress/getFlowInfoLogByLogID.md)
+             7. [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
+               施工日志：
+             1. [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
+             2. [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
+             3. [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
          3. [安全管理](api/business/SafeWork/README.md)
             1. 危险源识别审核，反馈
             2. 危险源识别台账

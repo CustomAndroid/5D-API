@@ -67,37 +67,30 @@
          4. 签证查询
 
 9. [统计报表](api/chart/README.md)
-
-        1. [进度相关](api/chart/Progress/README.md)
-               1. [进度与计划完成比](api/chart/Progress/GetScheduleCompletionRatio.md)
-               1. [进度与计划完成比 – 图表数据](api/chart/Progress/GetScheduleCompletionRatioCharts.md)
-               1. [进度差异分析](api/chart/Progress/GetScheduleVarianceAnalysis.md)
-               1. [进度差异分析报表 – 图表数据](api/chart/Progress/GetScheduleVarianceAnalysisCharts.md)
-               1. [施工单位进度填报频次](api/chart/Progress/GetUnitFrequencyOfFilling.md)
-
-        2. [成本相关](api/chart/Cost/README.md)
-               1. [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
-               1. [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
-               1. [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
-               1. [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
-               1. [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
-               1. [获取历史利润](api/chart/Cost/GetProfitHistory.md)
-
-        3. [问题相关](api/chart/Problem/README.md)
-
-               1. [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
-
-        4. [安全相关](api/chart/Safework/README.md)
-               1. [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
-               1. [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
-               1. [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
-
-        5. [材料相关](api/chart/Material/README.md)
-               1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
-               1. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
-
+      1. [进度相关](api/chart/Progress/README.md)
+            1. [进度与计划完成比](api/chart/Progress/GetScheduleCompletionRatio.md)
+            2. [进度与计划完成比 – 图表数据](api/chart/Progress/GetScheduleCompletionRatioCharts.md)
+            3. [进度差异分析](api/chart/Progress/GetScheduleVarianceAnalysis.md)
+            4. [进度差异分析报表 – 图表数据](api/chart/Progress/GetScheduleVarianceAnalysisCharts.md)
+            5. [施工单位进度填报频次](api/chart/Progress/GetUnitFrequencyOfFilling.md)
+      2. [成本相关](api/chart/Cost/README.md)
+            1. [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
+            2. [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
+            3. [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
+            4. [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
+            5. [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
+            6. [获取历史利润](api/chart/Cost/GetProfitHistory.md)
+      3. [问题相关](api/chart/Problem/README.md)
+            1. [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
+      4. [安全相关](api/chart/Safework/README.md)
+            1. [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
+            2. [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
+            3. [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
+      5. [材料相关](api/chart/Material/README.md)
+            1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
+            2. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 10. [其他](api/other/README.md)
-      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+        1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 
 11. [更新日志](log.md)
 

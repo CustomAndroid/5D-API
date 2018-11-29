@@ -31,77 +31,77 @@
          2. [获取项目资料列表](api/business/DocumentMng/ProjectFileList.md)
          3. [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
       2. [进度管理](api/business/Progress/README.md)
-                1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
-             1. [获取进度日志填报](api/business/Progress/getPlanProgressInfo.md)
-             2. [提交施工日志](api/business/Progress/setPlanSubmitHistory.md)
-             3. [获取进度审核列表](api/business/Progress/GetPlanApplData.md)
-             4. [根据ID获取进度填报](api/business/Progress/getPlanLogById.md)
-             5. [根据ID获取进度审核详情](api/business/Progress/getProgressVerifyLogById.md)
-             6. [根据FlowId 查询施工日志审批流程](api/business/Progress/getFlowInfoLogByLogID.md)
-                8. [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
-             1. [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
-             2. [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
-             3. [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
-         3. [安全管理](api/business/SafeWork/README.md)
-            1. 危险源识别审核，反馈
-            2. 危险源识别台账
-            3. 危险源监控跟踪
-            4. 安全隐患整改审核，反馈
-            5. 安全隐患整改台账
-         4. [问题管理](api/business/Problem/README.md)
-            1. [查询问题列表](api/business/Problem/getQualityQuesList.md)
-            2. [查询问题审核列表](api/business/Problem/getQualityQuesApplList.md)
-            3. [问题提报](api/business/Problem/setQualityQuest.md)
-            4. [问题审批处理进度](api/business/Problem/getQualityCheckProcess.md)
-            5. [问题审核;IsFirst:0代表关闭，1代表审核提交](api/business/Problem/auditingQualityQues.md)
-            6. [根据构件ID查询该构件相关的问题列表](api/business/Problem/GetProblemsByGuid.md)
-         5. [材料管理](api/business/MaterialMng/README.md) 
-            1. 采购台账
-            2. 采购登记
-            3. 领用台账   
-            4. 领用登记
-         6. [成本管理](api/business/CostMng/README.md)
-            1. 合同查询
-            2. 验工计价
-            3. 变更查询
-            4. 签证查询
+         1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
+         1. [获取进度日志填报](api/business/Progress/getPlanProgressInfo.md)
+         2. [提交施工日志](api/business/Progress/setPlanSubmitHistory.md)
+         3. [获取进度审核列表](api/business/Progress/GetPlanApplData.md)
+         4. [根据ID获取进度填报](api/business/Progress/getPlanLogById.md)
+         5. [根据ID获取进度审核详情](api/business/Progress/getProgressVerifyLogById.md)
+         6. [根据FlowId 查询施工日志审批流程](api/business/Progress/getFlowInfoLogByLogID.md)
+         8. [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
+         1. [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
+         2. [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
+         3. [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
+      3. [安全管理](api/business/SafeWork/README.md)
+         1. 危险源识别审核，反馈
+         2. 危险源识别台账
+         3. 危险源监控跟踪
+         4. 安全隐患整改审核，反馈
+         5. 安全隐患整改台账
+      4. [问题管理](api/business/Problem/README.md)
+         1. [查询问题列表](api/business/Problem/getQualityQuesList.md)
+         2. [查询问题审核列表](api/business/Problem/getQualityQuesApplList.md)
+         3. [问题提报](api/business/Problem/setQualityQuest.md)
+         4. [问题审批处理进度](api/business/Problem/getQualityCheckProcess.md)
+         5. [问题审核;IsFirst:0代表关闭，1代表审核提交](api/business/Problem/auditingQualityQues.md)
+         6. [根据构件ID查询该构件相关的问题列表](api/business/Problem/GetProblemsByGuid.md)
+      5. [材料管理](api/business/MaterialMng/README.md) 
+         1. 采购台账
+         2. 采购登记
+         3. 领用台账   
+         4. 领用登记
+      6. [成本管理](api/business/CostMng/README.md)
+         1. 合同查询
+         2. 验工计价
+         3. 变更查询
+         4. 签证查询
 
 9. [统计报表](api/chart/README.md)
 
-  10. [进度相关](api/chart/Progress/README.md)
-       ​    1. [进度与计划完成比](api/chart/Progress/GetScheduleCompletionRatio.md)
-       ​    1. [进度与计划完成比 – 图表数据](api/chart/Progress/GetScheduleCompletionRatioCharts.md)
-       ​    1. [进度差异分析](api/chart/Progress/GetScheduleVarianceAnalysis.md)
-       ​    1. [进度差异分析报表 – 图表数据](api/chart/Progress/GetScheduleVarianceAnalysisCharts.md)
-       ​    1. [施工单位进度填报频次](api/chart/Progress/GetUnitFrequencyOfFilling.md)
+        1. [进度相关](api/chart/Progress/README.md)
+               1. [进度与计划完成比](api/chart/Progress/GetScheduleCompletionRatio.md)
+               1. [进度与计划完成比 – 图表数据](api/chart/Progress/GetScheduleCompletionRatioCharts.md)
+               1. [进度差异分析](api/chart/Progress/GetScheduleVarianceAnalysis.md)
+               1. [进度差异分析报表 – 图表数据](api/chart/Progress/GetScheduleVarianceAnalysisCharts.md)
+               1. [施工单位进度填报频次](api/chart/Progress/GetUnitFrequencyOfFilling.md)
 
-  11. [成本相关](api/chart/Cost/README.md)
-          ​    1. [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
-          ​    1. [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
-          ​    1. [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
-          ​    1. [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
-          ​    1. [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
-          ​    1. [获取历史利润](api/chart/Cost/GetProfitHistory.md)
+        2. [成本相关](api/chart/Cost/README.md)
+               1. [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
+               1. [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
+               1. [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
+               1. [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
+               1. [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
+               1. [获取历史利润](api/chart/Cost/GetProfitHistory.md)
 
-  12. [问题相关](api/chart/Problem/README.md)
+        3. [问题相关](api/chart/Problem/README.md)
 
-   13. [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
+               1. [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
 
-  14. [安全相关](api/chart/Safework/README.md)
-          ​    1. [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
-          ​    1. [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
-          ​    1. [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
+        4. [安全相关](api/chart/Safework/README.md)
+               1. [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
+               1. [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
+               1. [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
 
-  15. [材料相关](api/chart/Material/README.md)
-          ​    1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
-          ​    1. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
+        5. [材料相关](api/chart/Material/README.md)
+               1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
+               1. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 
-16. [其他](api/other/README.md)
-          ​      ​      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+10. [其他](api/other/README.md)
+      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 
-17. [更新日志](log.md)
+11. [更新日志](log.md)
 
-18. [TODO](TODO.md)
+12. [TODO](TODO.md)
 
 
 

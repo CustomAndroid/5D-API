@@ -61,10 +61,11 @@
          3. 领用台账   
          4. 领用登记
       6. [成本管理](api/business/CostMng/README.md)
-         1. 合同查询
-         2. 验工计价
-         3. 变更查询
-         4. 签证查询
+         1. [合同查询](api/business/CostMng/GetContracts.md)
+         2. [验工计价查询](api/business/CostMng/GetInspectionPriceList.md)
+         3. [ 验工计价明细](api/business/CostMng/GetInspectionPriceContentList.md)
+         4. [变更台账查询](api/business/CostMng/GetChangeBook.md)
+         5. [签证台账查询](api/business/CostMng/GetVisaStandingBookList.md)
 
 9. [统计报表](api/chart/README.md)
       1. [进度相关](api/chart/Progress/README.md)
@@ -90,7 +91,7 @@
             1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
             2. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 10. [其他](api/other/README.md)
-      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+      ​    1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 
 11. [更新日志](log.md)
 

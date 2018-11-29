@@ -49,9 +49,9 @@
    3. 领用台账   
    4. 领用登记
 6. [成本管理](CostMng/README.md)
-   1. 合同查询
-   2. 验工计价
-   3. 变更查询
-   4. 签证查询
 
-
+   7. [POST /api/AppApi/GetContracts 59. 合同查询](CostMng/GetContracts.md)
+   2. [POST /api/AppApi/GetInspectionPriceList 60.验工计价查询](CostMng/GetInspectionPriceList.md)
+   3. [POST /api/AppApi/GetInspectionPriceContentList 验工计价明细](CostMng/GetInspectionPriceContentList.md)
+   4. [POST /api/AppApi/GetChangeBook 59.变更台账查询](CostMng/GetChangeBook.md)
+   5. [POST /api/AppApi/GetVisaStandingBookList 61.签证台账查询](CostMng/GetVisaStandingBookList.md)

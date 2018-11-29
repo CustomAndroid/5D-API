@@ -29,11 +29,17 @@
       * [获取项目资料列表](api/business/DocumentMng/ProjectFileList.md)
       * [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
     * [进度管理](api/business/Progress/README.md)
-        * 计划查询
-        * 进度填报 
-        * 进度填报审核
-        * 施工日志填报 
-        * [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
+      * [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
+      * [获取进度日志填报](api/business/Progress/getPlanProgressInfo.md)
+      * [提交施工日志](api/business/Progress/setPlanSubmitHistory.md)
+      * [获取进度审核列表](api/business/Progress/GetPlanApplData.md)
+      * [根据ID获取进度填报](api/business/Progress/getPlanLogById.md)
+      * [根据ID获取进度审核详情](api/business/Progress/getProgressVerifyLogById.md)
+      * [根据FlowId 查询施工日志审批流程](api/business/Progress/getFlowInfoLogByLogID.md)
+      * [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
+      * [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
+      * [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
+      * [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
     * [安全管理](api/business/SafeWork/README.md)
         * 危险源识别审核，反馈
         * 危险源识别台账

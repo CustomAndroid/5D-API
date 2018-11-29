@@ -6,10 +6,26 @@
    2. [POST /api/AppApi/ProjectFileList 获取项目资料列表](DocumentMng/ProjectFileList.md)
    3. [POST /api/AppApi/ModelFileList FileAttributive:1标示项目资料，2标示构件资料](DocumentMng/ModelFileList.md)
 2. [进度管理](Progress/README.md)
-   1. 计划查询
-   2. 进度填报 
-   3. 进度填报审核
-   4. 施工日志填报 
+
+   施工计划：
+
+     1. [获取/更新项目施工计划及版本](Progress/getPlanAndVersion.md)
+
+   进度填报：
+
+     1. [获取进度日志填报](Progress/getPlanProgressInfo.md)
+     2. [提交施工日志](Progress/setPlanSubmitHistory.md)
+     3. [获取进度审核列表](Progress/GetPlanApplData.md)
+     4. [根据ID获取进度填报](Progress/getPlanLogById.md)
+     5. [根据ID获取进度审核详情](Progress/getProgressVerifyLogById.md)
+     6. [根据FlowId 查询施工日志审批流程](Progress/getFlowInfoLogByLogID.md)
+     7. [审核施工进度填报](Progress/auditingPlanLog.md)
+
+   施工日志：
+
+     1. [查询施工日志月填报情况](Progress/GetConstructMonthLogStatus.md)
+     2. [查询施工日志详情](Progress/GetConstructMonthLogInfo.md)
+     3. [提交施工日志](Progress/submitConstructMonthLog.md)
 3. [安全管理](SafeWork/README.md)
    1. 危险源识别审核，反馈
    2. 危险源识别台账

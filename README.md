@@ -30,19 +30,15 @@
          2. [获取资料分类](api/business/DocumentMng/ProjectFileTree.md)
          2. [获取项目资料列表](api/business/DocumentMng/ProjectFileList.md)
          3. [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
-      2. [进度管理](api/business/Progress/README.md)
-
-          ​	施工计划：
-             1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
-          进度填报：
+      2. [进度管理
+                1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
              1. [获取进度日志填报](api/business/Progress/getPlanProgressInfo.md)
              2. [提交施工日志](api/business/Progress/setPlanSubmitHistory.md)
              3. [获取进度审核列表](api/business/Progress/GetPlanApplData.md)
              4. [根据ID获取进度填报](api/business/Progress/getPlanLogById.md)
              5. [根据ID获取进度审核详情](api/business/Progress/getProgressVerifyLogById.md)
              6. [根据FlowId 查询施工日志审批流程](api/business/Progress/getFlowInfoLogByLogID.md)
-             7. [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
-               施工日志：
+                8. [审核施工进度填报](api/business/Progress/auditingPlanLog.md)
              1. [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
              2. [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
              3. [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
@@ -80,28 +76,28 @@
        ​    1. [施工单位进度填报频次](api/chart/Progress/GetUnitFrequencyOfFilling.md)
 
   11. [成本相关](api/chart/Cost/README.md)
-         ​    1. [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
-         ​    1. [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
-         ​    1. [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
-         ​    1. [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
-         ​    1. [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
-         ​    1. [获取历史利润](api/chart/Cost/GetProfitHistory.md)
+          ​    1. [获取当月收入](api/chart/Cost/GetIncomeStatistics.md)
+          ​    1. [获取历史收入](api/chart/Cost/GetIncomeHistory.md)
+          ​    1. [获取当月支出](api/chart/Cost/GetExpenditureStatistics.md)
+          ​    1. [获取历史支出](api/chart/Cost/GetExpenditureHistory.md)
+          ​    1. [获取当月利润](api/chart/Cost/GetProfitStatistics.md)
+          ​    1. [获取历史利润](api/chart/Cost/GetProfitHistory.md)
 
   12. [问题相关](api/chart/Problem/README.md)
 
    13. [问题统计分析报表](api/chart/Problem/GetStatisticalAnalysisReport.md)
 
   14. [安全相关](api/chart/Safework/README.md)
-         ​    1. [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
-         ​    1. [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
-         ​    1. [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
+          ​    1. [危险源整改通知单报表](api/chart/Safework/GetRiskSourceRectificationNotice.md)
+          ​    1. [安全员跟踪统计分析](api/chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.md)
+          ​    1. [危险源统计分析](api/chart/Safework/GetStatisticalAnalysisOfHazardSources.md)
 
   15. [材料相关](api/chart/Material/README.md)
-         ​    1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
-         ​    1. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
+          ​    1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
+          ​    1. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 
 16. [其他](api/other/README.md)
-       ​      ​      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+          ​      ​      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 
 17. [更新日志](log.md)
 

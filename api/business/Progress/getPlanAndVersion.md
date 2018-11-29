@@ -29,7 +29,7 @@ body:
 | ----------------- | :------: | ------------------------------------------------------------ |
 | **Code**          |  string  | 0：成功 ；其他：失败                                         |
 | **CodeMsg**       |  String  | 失败时原因信息                                               |
-| **TaskID**        |          | 计划任务ID（可查询模型ID和名称用于加载模型，模型加载完调用引擎api`SetActorColor(GUIDS,RED,GREEN,BLUE)`设置构件颜色以标识，或调用二次开发api[`setActorsColor(guids, r, g, b)`](https://github.com/Sogrey/3DEngineToolsBox/blob/master/3DEngineToolsBoxHandbook.md#setActorsColor)设置） |
+| **TaskID**        |          | 计划任务ID（可查询模型ID和名称用于加载模型，模型加载完调用引擎api`SetActorColor(GUIDS,RED,GREEN,BLUE)`设置构件颜色以标识，或调用二次开发api[`setActorsColor(guids, r, g, b)`](https://github.com/Sogrey/3DEngineToolsBox/blob/master/3DEngineToolsBoxHandbook.md#setActorsColor)设置）,其中`GUID`就是返回中的GUID↓ |
 | **TaskName**      |          | 名称                                                         |
 | **ParentID**      |          | 父节点ID                                                     |
 | **GuId**          |          | 该计划关联的构件ID（父节点为空）                             |

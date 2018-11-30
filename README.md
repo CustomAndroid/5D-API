@@ -95,7 +95,7 @@
             1. [材料库存量统计](api/chart/Material/GetMaterialIinventoryStatistics.md)
             2. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 10. [其他](api/other/README.md)
-        ​    1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
 
 11. [更新日志](log.md)
 

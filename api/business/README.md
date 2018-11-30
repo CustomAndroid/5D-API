@@ -44,10 +44,15 @@
    9. POST /api/AppApi/getQualityQuesListItem  根据问题ID获取问题详情 --- 【此接口暂时无用且返回有问题】
    10. [POST /api/AppApi/GetProblemsByGuid 36根据构件ID查询该构件相关的问题列表](Problem/GetProblemsByGuid.md)
 5. [材料管理](MaterialMng/README.md) 
-   1. 采购台账
-   2. 采购登记
-   3. 领用台账   
-   4. 领用登记
+
+   6. [POST /api/AppApi/GetPurchaseStandingBookList 62.采购台账查询](MaterialMng/GetPurchaseStandingBookList.md)
+   2. [POST /api/AppApi/GetUseStandingBookList 63.领用台账查询](MaterialMng/GetUseStandingBookList.md)
+   3. [POST /api/AppApi/submitPurchase 73.材料采购提报](MaterialMng/submitPurchase.md)
+   4. [POST /api/AppApi/submitMaterialUse 74.材料领用提报](MaterialMng/submitMaterialUse.md)
+   5. [POST /api/AppApi/getMaterialTypeList 75.材料类别 – 采购领用时的材料清单](MaterialMng/getMaterialTypeList.md)
+   6. [POST /api/AppApi/getPurchaseMaterialList 76.材料采购提报选择材料列表](MaterialMng/getPurchaseMaterialList.md)
+   7. [POST /api/AppApi/getUseMaterialList 77.材料领用提报选择材料清单](MaterialMng/getUseMaterialList.md)
+
 6. [成本管理](CostMng/README.md)
 
    7. [POST /api/AppApi/GetContracts 59. 合同查询](CostMng/GetContracts.md)

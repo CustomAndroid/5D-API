@@ -54,10 +54,13 @@
         * [问题审核;IsFirst:0代表关闭，1代表审核提交](api/business/Problem/auditingQualityQues.md)
         * [根据构件ID查询该构件相关的问题列表](api/business/Problem/GetProblemsByGuid.md)
     * [材料管理](api/business/MaterialMng/README.md) 
-        * 采购台账
-        * 采购登记
-        * 领用台账   
-        * 领用登记
+        * [采购台账查询](api/business/MaterialMng/GetPurchaseStandingBookList.md)
+        * [领用台账查询](api/business/MaterialMng/GetUseStandingBookList.md)
+        * [材料采购提报](api/business/MaterialMng/submitPurchase.md)
+        * [材料领用提报](api/business/MaterialMng/submitMaterialUse.md)
+        * [材料类别 – 采购领用时的材料清单](api/business/MaterialMng/getMaterialTypeList.md)
+        * [材料采购提报选择材料列表](api/business/MaterialMng/getPurchaseMaterialList.md)
+        * [材料领用提报选择材料清单](api/business/MaterialMng/getUseMaterialList.md)
     * [成本管理](api/business/CostMng/README.md)
         * [合同查询](api/business/CostMng/GetContracts.md)
         * [验工计价查询](api/business/CostMng/GetInspectionPriceList.md)

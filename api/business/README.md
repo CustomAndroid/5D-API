@@ -27,11 +27,29 @@
      2. [POST /api/AppApi/GetConstructMonthLogInfo 83.查询施工日志详情](Progress/GetConstructMonthLogInfo.md)
      3. [POST /api/AppApi/submitConstructMonthLog 84.提交施工日志](Progress/submitConstructMonthLog.md)
 3. [安全管理](SafeWork/README.md)
-   1. 危险源识别审核，反馈
-   2. 危险源识别台账
-   3. 危险源监控跟踪
-   4. 安全隐患整改审核，反馈
-   5. 安全隐患整改台账
+
+   危险源识别：
+
+   1. [POST /api/AppApi/getHazardIdentificationAuditList 71.危险源识别审核列表](SafeWork/getHazardIdentificationAuditList.md)
+   2. [POST /api/AppApi/getHazardIdentificationInfo 72.危险源识别详情](SafeWork/getHazardIdentificationInfo.md)
+   3. [POST /api/AppApi/AuditingHazardDistinguish 39.危险源识别审核](SafeWork/AuditingHazardDistinguish.md)
+   4. POST /api/AppApi/GetHazardIdentificationVerificationProcess 81.查询危险源识别审核流程
+   5. [POST /api/AppApi/GetHazardSourceDistinguishLog 85.查询危险源识别台账列表](SafeWork/GetHazardSourceDistinguishLog.md)
+
+   危险源监控跟踪:
+
+   1. [POST /api/AppApi/GetHazardMonitoringTrackingList 40.危险源监控跟踪列表](SafeWork/GetHazardMonitoringTrackingList.md)
+   2. [POST /api/AppApi/GetHazardMonitoringTrackingHistoryList 41危险源监控跟踪历史](SafeWork/GetHazardMonitoringTrackingHistoryList.md)
+   3. [POST /api/AppApi/GetHazardMonitoringTrackingHistoryContent 42.危险源监控跟踪历史详情](SafeWork/GetHazardMonitoringTrackingHistoryContent.md)
+
+   安全整改通知单：
+
+   1. [POST /api/AppApi/GetSafetyRectificationNoticeList 46.获取安全整改通知单列表](SafeWork/GetSafetyRectificationNoticeList.md)
+   2. [POST /api/AppApi/GetSafetyRectificationNoticeProcess 47.获取安全整改通知单审核流程](SafeWork/GetSafetyRectificationNoticeProcess.md)
+   3. [POST /api/AppApi/AuditingSafetyRectificationNotice 49.整改通知单审核](SafeWork/AuditingSafetyRectificationNotice.md)
+   4. [POST /api/AppApi/GetHazardSourceMassageLog 86.查询安全隐患整改通知单台账列表](SafeWork/GetHazardSourceMassageLog.md)
+   5. [POST /api/AppApi/NewSafetyRectificationNotice 48.根据ID查询/新建安全整改通知单](SafeWork/NewSafetyRectificationNotice.md)
+
 4. [问题管理](Problem/README.md)
    1. [POST /api/AppApi/getQualityQuesList 16.查询问题列表](Problem/getQualityQuesList.md)
    2. [POST /api/AppApi/getQualityQuesApplList 16.查询问题审核列表](Problem/getQualityQuesApplList.md)

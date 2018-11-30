@@ -41,11 +41,19 @@
       * [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
       * [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
     * [安全管理](api/business/SafeWork/README.md)
-        * 危险源识别审核，反馈
-        * 危险源识别台账
-        * 危险源监控跟踪
-        * 安全隐患整改审核，反馈
-        * 安全隐患整改台账
+      * [危险源识别审核列表](api/business/SafeWork/getHazardIdentificationAuditList.md)
+      * [危险源识别详情](api/business/SafeWork/getHazardIdentificationInfo.md)
+      * [危险源识别审核](api/business/SafeWork/AuditingHazardDistinguish.md)
+      * .查询危险源识别审核流程
+      * [查询危险源识别台账列表](api/business/SafeWork/GetHazardSourceDistinguishLog.md)
+      * [危险源监控跟踪列表](api/business/SafeWork/GetHazardMonitoringTrackingList.md)
+      * [危险源监控跟踪历史](api/business/SafeWork/GetHazardMonitoringTrackingHistoryList.md)
+      * [危险源监控跟踪历史详情](api/business/SafeWork/GetHazardMonitoringTrackingHistoryContent.md)
+      * [获取安全整改通知单列表](api/business/SafeWork/GetSafetyRectificationNoticeList.md)
+      * [获取安全整改通知单审核流程](api/business/SafeWork/GetSafetyRectificationNoticeProcess.md)
+      * [整改通知单审核](api/business/SafeWork/AuditingSafetyRectificationNotice.md)
+      * [查询安全隐患整改通知单台账列表](api/business/SafeWork/GetHazardSourceMassageLog.md)
+      * [根据ID查询/新建安全整改通知单](api/business/SafeWork/NewSafetyRectificationNotice.md)
     * [问题管理](api/business/Problem/README.md)
         * [查询问题列表](api/business/Problem/getQualityQuesList.md)
         * [查询问题审核列表](api/business/Problem/getQualityQuesApplList.md)

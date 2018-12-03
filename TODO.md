@@ -25,14 +25,15 @@
     >   }
     >   ```
 
+- **2** 新增[查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
 
-- **2** 施工日志提交接口开发
+- **3** 施工日志提交接口开发
     文档:
 
     > https://sogrey.gitbooks.io/5d-api/content/api/business/Progress/submitConstructMonthLog.html
 
 
-- **3** 新增[查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
+
 
 
 

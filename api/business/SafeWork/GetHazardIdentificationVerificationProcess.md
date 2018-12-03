@@ -1,30 +1,30 @@
-## 获取安全整改通知单审核流程列表
+## 查询危险源识别审核流程
 
-> 用于获取安全整改通知单审核流程列表
+> 用于查询危险源识别审核流程
 
 ### 1. 请求说明
 
 > 请求方式：POST
 >
-> 请求URL ：`/api/AppApi/GetSafetyRectificationNoticeProcess`
+> 请求URL ：`/api/AppApi/GetHazardIdentificationVerificationProcess`
 
 ### 2. 请求参数
 
 body:
 
-| 字段          | 字段类型 | 必填 | 字段说明         |
-| ------------- | :------: | :--: | ---------------- |
-| **ProjectID** |  String  |  Y   | 项目ID           |
-| **userId**    |  String  |  Y   | 用户ID           |
-| **id**        |  String  |  Y   | 安全整改通知单ID |
+| 字段          | 字段类型 | 必填 | 字段说明     |
+| ------------- | :------: | :--: | ------------ |
+| **ProjectID** |  String  |  Y   | 项目ID       |
+| **userId**    |  String  |  Y   | 用户ID       |
+| **hid**       |  String  |  Y   | 危险源识别ID |
 
 示例:
 
 ```json
 {
-  "userid": "496",
-  "projectid": "61",
-  "id": "91"
+  "userId": "496",
+  "projectId": "61",
+  "hid": "107"
 }
 ```
 
@@ -93,5 +93,11 @@ body:
       "Note": ""
     }
   ]
+}
+
+{
+  "Code": 1,
+  "CodeMsg": "System.NullReferenceException: 未将对象引用设置到对象的实例。\r\n   在 ConstructionProcessManageAPI.Controllers.AppApiController.GetHazardIdentificationVerificationProcess(HazardId Pmodel)",
+  "Datas": null
 }
 ```

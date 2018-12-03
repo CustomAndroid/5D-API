@@ -57,7 +57,7 @@
          1. [危险源识别审核列表](api/business/SafeWork/getHazardIdentificationAuditList.md)
          2. [危险源识别详情](api/business/SafeWork/getHazardIdentificationInfo.md)
          3. [危险源识别审核](api/business/SafeWork/AuditingHazardDistinguish.md)
-         4. 查询危险源识别审核流程
+         4. [查询危险源识别审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)
          5. [查询危险源识别台账列表](api/business/SafeWork/GetHazardSourceDistinguishLog.md)
 
          危险源监控跟踪:

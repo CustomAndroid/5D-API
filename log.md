@@ -6,3 +6,7 @@
 * [U] 关联**[引擎二次开发简易API](api/other/README.md)**
 * [A] 增加**[业务功能](api/business/README.md)-[安全管理](api/business/SafeWork/README.md)**的**12**个接口文档
 
+**2018-12-03**
+
+* [A] 增加接口[查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
+* [U] 更新[登录](api/login/login.md)，返回增加`roleData`字段用于菜单权限动态控制

@@ -52,6 +52,7 @@ body:
 | **FTPPort**            |  String  | ftp端口                                                      |
 | **FTPUser**            |  String  | ftp登录名                                                    |
 | **FTPPassword**        |  String  | ftp密码                                                      |
+| **roleData**           |  String  | 菜单动态权限。多个`,`间隔，对应平台上菜单`SystemName`        |
 
 返回示例：
 
@@ -77,7 +78,8 @@ body:
         "FTPAddress": "xxx.xxx.xxx.xxx",
         "FTPPort": "xxxx",
         "FTPUser": "xxxxxx", 
-        "FTPPassword": "xxxxxxxxxxxx“
+        "FTPPassword": "xxxxxxxxxxxx", 
+        "roleData": "Mydesktop,StayHandle,EarlyWarning,MessageRemind,ProjectStatus,ProgressAnalysis,CostAnalysis,SafeAnalysis,MaterialAnalysis,DataAnalysis,ProblemAnalysis,ProjectMangageSystemSettings,ProjectMangageBasicInformation,OA_NoticeListShow,OA_NoticeList,OA_NoticeListManage,ElectronicSandBox,BasisSandBox,ProgressSandBox,3DVisualization,OverallServiceSandBox,OverallSandBox,QRCodeSandBox,ProjectPlanManagement,PlanTakPreview,ConstructionLog,ProjectDelayWarn,CostManage,PerfectMaterialEdit,PerfectMaterialQuery,ContractControlList,ChangeControl,ChangeManagement,ChangeManagementDo,ChangeManagementView,ChangeManagementModel,VisaControl,VisaManagement,VisaManagementDo,VisaManagementView,InspectionPrice,SubInspectionPriceList,Payment,SubPaymentConstruction,Payment,SubIncomeLedger,CostControl,Equipment,EquipmentList,EquipmentUsageLedger,ManagementCost,OfficeSupplies,TransportationFee,StaffSalary,OtherFee,ProjectHazardSourceDistinguishManage,ProjectHazardSourceDistinguishList,ProjectHazardSourceDistinguishHandleList,ProjectHazardSourceDistinguishFeedBackList,ProjectHazardSourceMonitorList,ProjectHazardSourceMassageList,ProjectHazardSourceMassageHandleList,ProjectHazardSourceMassageFeedBackList,ProjectHazardSourceMassageLog,SubcontractSecurityCivilizationItem,SpecialEquipmentEntryRegistration,SpecialPersonnelRegistration,QualityControl,QualityControlList,QualityControlListDo,QualityControlListFeedBack,QualityControlAnalysis,ProjectModelFilesManagement,PlatformAdministratorPublicInfo,PlatformAdministratorPublicInfoType,PlatformAdministratorPublicInfoList,ProjectModelFilesType,ProjectModelFilesData,ProjectModelFilesAdd,ProjectModelFilesUpdate,ProjectModelFilesDelete,ProjectModelFilesDataView,MaterialControl,MaterialList,PurchaseMaterial,MaterialUse,StatisticsCenter,UserStat,ProgressCompareStat,ProgressDiffStat,PlanProgressWriteReport,CostControlStatistics,IncomeStatistics,IncomeHistory,ExpenditureStatistics,ExpenditureHistory,ProfitStatistics,ProblemStatisReport,SafeLibraryMointorReport,SafeWorkerMonitorReport,SafeMessageReport,MaterialStockStat,User,UserInfo,ChangePwd,ConstructionPlanControl,ConstructionPlanControlList,ConstructionPlanControlListDo,ConstructionPlanControlListFeedBack,ConstructionPlanControlAnalysis,ConstructionProcessControl,ConstructionProcessControlList,ConstructionProcessControlListDo,ConstructionProcessControlListFeedBack,ConstructionProcessControlAnalysis,Mydesktop,PlatformAdministratorChangePwd"
     }
 }
 ```

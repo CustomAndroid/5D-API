@@ -10,4 +10,5 @@
 
 * [A] 增加接口**[查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)**
 * [U] 更新**[登录](api/login/login.md)**，返回增加**`roleData`**字段用于菜单权限动态控制
+* [U] 增加接口**[查询危险源识别审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)**
 

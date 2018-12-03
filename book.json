@@ -23,12 +23,27 @@
 		"tbfed-pagefooter",
 		"toggle-chapters",
 		"sectionx",
-		"emphasize"
+		"emphasize",
+		"-search","-lunr",
+        "search-pro",
+		"splitter",
+		"mermaid-gb3",
+		"sectionx",
+		"chart",
+		"copy-code-button",
+		"alerts"
 	],
 	"pluginsConfig": {
+	    "chart": {
+            "type": "c3"
+        },
+	    "sectionx": {
+          "tag": "b"
+        },
 		"theme-default": {
 		     "showLevel": true
-		},"fontsettings": {
+		},
+		"fontsettings": {
 			"theme": "white",
 			"family": "serif",
 			"size":  1

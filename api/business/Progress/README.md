@@ -19,4 +19,5 @@
 * [POST /api/AppApi/GetConstructMonthLogStatus 82.查询施工日志月填报情况](GetConstructMonthLogStatus.md)
 * [POST /api/AppApi/GetConstructMonthLogInfo 83.查询施工日志详情](GetConstructMonthLogInfo.md)
 * [POST /api/AppApi/submitConstructMonthLog 84.提交施工日志](submitConstructMonthLog.md)
+* [POST /api/AppApi/GetconstructionSites 查询具体日期施工部位列表](GetconstructionSites.md)
 

@@ -52,6 +52,7 @@
       "Datas": null
     }
     ```
+
 - [ ] **3**【PC】危险源识别审核时没有审核结果，那平台上是不是要将审核结果去掉
     > http://117.34.118.4:9017/api/AppApi/AuditingHazardDistinguish
     > 
@@ -71,12 +72,15 @@
       "keyword": ""
     }
     ```
+
 - [ ] **5** 施工日志提交接口开发
     文档:
 
     > https://sogrey.gitbooks.io/5d-api/content/api/business/Progress/submitConstructMonthLog.html
 
 - [ ] **6** [登录接口](api/login/login.md)增加菜单权限字段，平台上控制菜单`SystemName`多个用`,`间隔，字段名可命名为 `SystemNames`
+
+- [ ] **7** 新增[查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
 
 
 

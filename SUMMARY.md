@@ -40,6 +40,7 @@
       * [查询施工日志月填报情况](api/business/Progress/GetConstructMonthLogStatus.md)
       * [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
       * [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
+      * [查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
     * [安全管理](api/business/SafeWork/README.md)
       * [危险源识别审核列表](api/business/SafeWork/getHazardIdentificationAuditList.md)
       * [危险源识别详情](api/business/SafeWork/getHazardIdentificationInfo.md)

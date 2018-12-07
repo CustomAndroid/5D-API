@@ -16,6 +16,7 @@ body:
 | ------------------------- | ---------- | :--: | ------------------------------------------------------------ |
 | **userId**                | **String** |  Y   | 用户ID（填报人ID）                                           |
 | **projectId**             | **String** |  Y   | 项目ID(审核人)                                               |
+| **R_Construction_logModel** |  |  | 日志详情内容 |
 | **ConstructUnitId**       | **String** |  Y   | 施工单位ID                                                   |
 | **checkDate**             | **String** |  Y   | 查询日期（yyyy-MM-dd）                                       |
 | **ConstructionSpecialty** | **String** |  Y   | 施工专业                                                     |
@@ -28,48 +29,108 @@ body:
 | **problem**               | **String** |  N   | 施工存在问题                                                 |
 | **SafetyShow**            | **String** |  N   | 安全质量情况                                                 |
 | **fileList**              | **String** |  N   | 附件(文件名:描述,文件名:描述)                                |
-| **logDetailsModelList**   | **String** |  Y   | 施工部位列表(json字符串),包括(计划内、计划外)： 施工部位 计划时间段 计划人数 计划设备 实际人数 设备数量 累计完成百分比 |
+| **logDetailsModelList**   | Array |  Y   | 施工部位列表 |
+| **CompletePercent** |  |  | 完成百分比 |
+| **IsDelete** |  |  | true 自定义任务，false计划任务 |
+| **PEndDate** |  |  | 计划截止时间 |
+| **PStartDate** |  |  | 计划开始时间 |
+| **PUserNum** |  |  | 计划人数 |
+| **PEquipMent** |  |  | 计划设备 |
+| **REquipMent** |  |  | 实际设备 |
+| **RUserNum** |  |  | 实际人数 |
+| **TaskID** |  |  | 计划ID，自定义任务没有 |
+| **Type** |  |  | 1计划内任务，2自定义任务 |
+| **id** |  |  | id,计划内有ID，自定义任务id为 `tmp_`开头 |
+| **site** |  |  | 施工部位 |
+| **R_Construction_logFileModelList** | Array |  | 附件列表 |
+| **filepath** | String |  | 上传文件路径 |
+| **filetype** | String |  | 文件类型，后缀名 |
+| **filename** | String |  | 文件名，描述 |
 
 示例:
 
 ``` json
 {
-    "userId": "", 
-    "projectId": "", 
-    "ConstructUnitId": "", 
-    "checkDate": "", 
-    "ConstructionSpecialty": "", 
-    "weather": "", 
-    "equipmentNum": "", 
-    "UserNum": "", 
-    "SituationShow": "", 
-    "equipmentShwo": "", 
-    "Situation": "", 
-    "problem": "", 
-    "SafetyShow": "", 
-    "fileList": "", 
-    "logDetailsModelList": "[/**参考下面格式**/ ]"
-}
-```
-logDetailsModelList 字段格式如下
-``` json
-[
-    {
-        "id": "415", //新建的此项为tmp_ 开头的临时ID
-        "Lid": "189", //新建的此项为空 
-        "TaskID": "c34dddbf-0f45-4d7a-b986-f9046e879f8a", //新建的此项为空 
-        "site": "Y16承台_Z16承台_Z16承台", 
-        "PStartDate": "2018/8/17 0:00:00", 
-        "PEndDate": "2018/9/11 0:00:00", 
-        "PUserNum": "0", 
-        "PEquipMent": "", 
-        "RUserNum": "103", 
-        "REquipMent": "12", 
-        "CompletePercent": "100.00", 
-        "Type": "1", //计划内为1，新建的此项为2
-        "IsDelete": false //计划内为false，新建的此项为true
+    "IsCanEdit": true, 
+    "R_Construction_logDetailsModelList": [
+        {
+            "CompletePercent": "12.00", 
+            "IsDelete": false, 
+            "PEndDate": "2018/12/7", 
+            "PEquipMent": "0", 
+            "PStartDate": "2018/11/25", 
+            "PUserNum": "0", 
+            "REquipMent": "9", 
+            "RUserNum": "12", 
+            "TaskID": "b51d7314-68ff-4083-a734-050d4db74475", 
+            "Type": "1", 
+            "id": "tmp_1544179256381", 
+            "site": "z16-1#桩基_桩基_桩基"
+        }, 
+        {
+            "CompletePercent": "10.00", 
+            "IsDelete": false, 
+            "PEndDate": "2018/12/19", 
+            "PEquipMent": "0", 
+            "PStartDate": "2018/12/7", 
+            "PUserNum": "0", 
+            "REquipMent": "8", 
+            "RUserNum": "13", 
+            "TaskID": "fb155485-b7fd-4cbf-a84a-0d742f189c78", 
+            "Type": "1", 
+            "id": "tmp_1544179256381", 
+            "site": "z16-2#桩基_桩基_桩基"
+        }, 
+        {
+            "CompletePercent": "10", 
+            "IsDelete": true, 
+            "PEndDate": "2018-12-07", 
+            "PEquipMent": "9", 
+            "PStartDate": "2018-12-01", 
+            "PUserNum": "12", 
+            "REquipMent": "9", 
+            "RUserNum": "11", 
+            "id": "tmp_1544179289195", 
+            "site": "自定义任务"
+        }
+    ], 
+    "R_Construction_logFileModelList": [
+        {
+            "filename": "图片1", 
+            "filepath": "/uploadFile/attachment/EF_20181207_184334614.png", 
+            "filetype": ".png"
+        }, 
+        {
+            "filename": "", 
+            "filepath": "/uploadFile/attachment/EF_20181207_184334613.png", 
+            "filetype": ".png"
+        }, 
+        {
+            "filename": "附件3", 
+            "filepath": "/uploadFile/attachment/EF_20181207_184334613.png", 
+            "filetype": ".png"
+        }
+    ], 
+    "R_Construction_logModel": {
+        "AddDate": "2018-12-07", 
+        "Adder": "496", 
+        "ConstructionUnit": "418", 
+        "PostName": "土建", 
+        "Postid": "1", 
+        "Projectid": "61", 
+        "SafetyShow": "安全质量问题", 
+        "Situation": "施工情况", 
+        "SituationShow": "施工工作总结", 
+        "UserName": "wang2", 
+        "UserNum": "23", 
+        "WeatherName": "雪天", 
+        "equipmentNum": "15", 
+        "equipmentShwo": "设备使用情况", 
+        "problem": "存在问题", 
+        "rq": "2018-12-07", 
+        "weatherID": "3"
     }
-]
+}
 ```
 ### 3. 返回参数
 

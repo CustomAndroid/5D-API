@@ -40,7 +40,7 @@ body:
 | **RUserNum** |  |  | 实际人数 |
 | **TaskID** |  |  | 计划ID，自定义任务没有 |
 | **Type** |  |  | 1计划内任务，2自定义任务 |
-| **id** |  |  | id,计划内有ID，自定义任务id为 `tmp_`开头 |
+| **id** |  |  | 自定义任务id为 `tmp_`开头,提交后服务器处理数据时id自增 |
 | **site** |  |  | 施工部位 |
 | **R_Construction_logFileModelList** | Array |  | 附件列表 |
 | **filepath** | String |  | 上传文件路径 |

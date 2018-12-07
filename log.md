@@ -18,8 +18,8 @@
 
 <!--sec data-title="2018-12-07" data-id="20181207" data-show=true ces-->
 
-- [R] 废弃[查询危险源识别详情-危险源列表](api/business/SafeWork/getHazardIdentificationInfo.md)，被[查询危险源识别详情+审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)取代
-- [R] 废弃[查询具体日期施工部位列表（施工日志）](api/business/Progress/GetconstructionSites.md),被[查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)替代
-- [U] 更新[查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)添加`PlanTaskList`字段未填报时查询相关施工任务
+- [R] 废弃~~**[查询危险源识别详情-危险源列表](api/business/SafeWork/getHazardIdentificationInfo.md)**~~，被**[查询危险源识别详情+审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)**取代
+- [R] 废弃~~**[查询具体日期施工部位列表（施工日志）](api/business/Progress/GetconstructionSites.md)**~~,被**[查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)**替代
+- [U] 更新**[查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)**添加**`PlanTaskList`**字段未填报时查询相关施工任务
 
 <!--endsec-->

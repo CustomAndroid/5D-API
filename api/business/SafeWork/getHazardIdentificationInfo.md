@@ -1,6 +1,8 @@
-## 查询危险源识别详情-危险源列表
+## ~~查询危险源识别详情-危险源列表~~[废弃，被[GetHazardIdentificationVerificationProcess](GetHazardIdentificationVerificationProcess.md)取代]
 
 > 用于查询危险源识别详情，内容仅含有危险源列表，表单数据可从列表带过来
+>
+> 已废弃，被[GetHazardIdentificationVerificationProcess](GetHazardIdentificationVerificationProcess.md)取代，查看该接口返回的 **`List`**字段
 
 ### 1. 请求说明
 

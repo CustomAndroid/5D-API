@@ -43,9 +43,9 @@
       * [查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
     * [安全管理](api/business/SafeWork/README.md)
       * [危险源识别审核列表](api/business/SafeWork/getHazardIdentificationAuditList.md)
-      * [危险源识别详情](api/business/SafeWork/getHazardIdentificationInfo.md)
+      * ~~[危险源识别详情](api/business/SafeWork/getHazardIdentificationInfo.md)~~【被[查询危险源识别详情+审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)替代】
       * [危险源识别审核](api/business/SafeWork/AuditingHazardDistinguish.md)
-      * [查询危险源识别审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)
+      * [查询危险源识别详情+审核流程](api/business/SafeWork/GetHazardIdentificationVerificationProcess.md)
       * [查询危险源识别台账列表](api/business/SafeWork/GetHazardSourceDistinguishLog.md)
       * [危险源监控跟踪列表](api/business/SafeWork/GetHazardMonitoringTrackingList.md)
       * [危险源监控跟踪历史](api/business/SafeWork/GetHazardMonitoringTrackingHistoryList.md)

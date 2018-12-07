@@ -33,9 +33,9 @@
    危险源识别：
 
    1. [POST /api/AppApi/getHazardIdentificationAuditList 71.危险源识别审核列表](SafeWork/getHazardIdentificationAuditList.md)
-   2. [POST /api/AppApi/getHazardIdentificationInfo 72.危险源识别详情](SafeWork/getHazardIdentificationInfo.md)
+   2. ~~[POST /api/AppApi/getHazardIdentificationInfo 72.危险源识别详情](SafeWork/getHazardIdentificationInfo.md)~~【被[查询危险源识别详情+审核流程](SafeWork/GetHazardIdentificationVerificationProcess.md)替代】
    3. [POST /api/AppApi/AuditingHazardDistinguish 39.危险源识别审核](SafeWork/AuditingHazardDistinguish.md)
-   4. [POST /api/AppApi/GetHazardIdentificationVerificationProcess 81.查询危险源识别审核流程](SafeWork/GetHazardIdentificationVerificationProcess.md)
+   4. [POST /api/AppApi/GetHazardIdentificationVerificationProcess 81.查询危险源识别详情+审核流程](SafeWork/GetHazardIdentificationVerificationProcess.md)
    5. [POST /api/AppApi/GetHazardSourceDistinguishLog 85.查询危险源识别台账列表](SafeWork/GetHazardSourceDistinguishLog.md)
 
    危险源监控跟踪:

@@ -41,6 +41,7 @@ body:
 | **R_Construction_logDetailsModelList** |  Array   | 施工部位列表（未提交返回计划内施工部位，已填报返回计划内和自行新增的施工部位） |
 | **R_Construction_logFileModelList**    |  Array   | 附件列表                                                     |
 | **IsCanEdit**                          | Boolean  | 是否可编辑（只可编辑当天的）                                 |
+| **PlanTaskList**                       |  Array   | 未填报日志时做查询施工部位列表用，已填报时为null             |
 
 `R_Construction_logModel`字段说明：
 
@@ -81,6 +82,21 @@ body:
 | **Type**            |  String  | 类型 1计划内 2计划外     |
 | **IsDelete**        | Boolean  | 是否可删除，计划外可删除 |
 
+**`PlanTaskList`**字段：
+
+| 字段              | 字段类型 | 字段说明             |
+| ----------------- | :------: | -------------------- |
+| **TaskId**        |  String  | 任务ID               |
+| **TaskName**      |  String  | 施工部位             |
+| **GuId**          |  String  | 相关构件ID           |
+| **ProjectId**     |  String  | 项目ID               |
+| **TaskDeys**      |  String  | 工期                 |
+| **UserNumber**    |  String  | 计划人数             |
+| **EquipmentShow** |  String  | 计划设备             |
+| **PStartDate**    |  String  | 计划开始时间         |
+| **PEndDate**      |  String  | 计划截止时间         |
+| **TaskPro**       |  String  | 进度（填报时可修改） |
+| **OrgName**       |  String  | 相关施工单位         |
 
 返回示例：
 
@@ -127,7 +143,76 @@ body:
         "IsDelete": false
       }
     ],
-    "PlanTaskList": null,
+    "PlanTaskList": [
+      {
+        "VisId": null,
+        "TaskId": "b51d7314-68ff-4083-a734-050d4db74475",
+        "TaskName": "z16-1#桩基_桩基_桩基",
+        "GuId": "599_662037",
+        "ProjectId": "61",
+        "Unit": null,
+        "UnitName": null,
+        "TaskDeys": "12",
+        "UserNumber": "0",
+        "EquipmentShow": "",
+        "MaterialShow": "",
+        "Technology": "",
+        "TaskType": "0",
+        "ParentId": "7d4ba867-f445-4d75-8f36-e7db1444ebee",
+        "PStartDate": "2018/11/25 0:00:00",
+        "PEndDate": "2018/12/7 0:00:00",
+        "VersionCode": null,
+        "EditUser": null,
+        "EditDate": null,
+        "Note": null,
+        "TaskStatus": null,
+        "RStartDate": "2018/12/6 0:00:00",
+        "REndDate": "2018/12/6 0:00:00",
+        "PStatus": null,
+        "TaskPro": "2.00",
+        "TaskLevel": "4",
+        "TaskSource": null,
+        "SortOrder": null,
+        "MileageID": null,
+        "Typestring": null,
+        "OrgName": "中铁十二局第二公司,中铁十二局第四公司",
+        "state": "open"
+      },
+      {
+        "VisId": null,
+        "TaskId": "fb155485-b7fd-4cbf-a84a-0d742f189c78",
+        "TaskName": "z16-2#桩基_桩基_桩基",
+        "GuId": "599_662558",
+        "ProjectId": "61",
+        "Unit": null,
+        "UnitName": null,
+        "TaskDeys": "12",
+        "UserNumber": "0",
+        "EquipmentShow": "",
+        "MaterialShow": "",
+        "Technology": "",
+        "TaskType": "0",
+        "ParentId": "7d4ba867-f445-4d75-8f36-e7db1444ebee",
+        "PStartDate": "2018/12/7 0:00:00",
+        "PEndDate": "2018/12/19 0:00:00",
+        "VersionCode": null,
+        "EditUser": null,
+        "EditDate": null,
+        "Note": null,
+        "TaskStatus": null,
+        "RStartDate": "",
+        "REndDate": "",
+        "PStatus": null,
+        "TaskPro": "0.00",
+        "TaskLevel": "4",
+        "TaskSource": null,
+        "SortOrder": null,
+        "MileageID": null,
+        "Typestring": null,
+        "OrgName": "中铁十二局第二公司,中铁十二局第四公司",
+        "state": "open"
+      }
+    ],
     "jsonYMD": null,
     "ConstructionUnitName": null,
     "FilePathAndName": null,

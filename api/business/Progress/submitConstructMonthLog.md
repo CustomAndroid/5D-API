@@ -13,6 +13,7 @@
 > 请求参数按照示例传入一个json字符串，其格式为[查询施工日志详情](GetConstructMonthLogInfo.md)接口的返回格式。
 
 body:
+
 | **参数**   |  **数据类型** | 是否必须 | 描述           |
 | ---------- |  :----------: | :------: | -------------- |
 | **Pmodel** | String | Y | 传入json字符串 |
@@ -64,65 +65,56 @@ json传中的各字段：
     "IsCanEdit": true, 
     "R_Construction_logDetailsModelList": [
         {
-            "CompletePercent": "12.00", 
-            "IsDelete": false, 
-            "PEndDate": "2018/12/7", 
-            "PEquipMent": "0", 
-            "PStartDate": "2018/11/25", 
-            "PUserNum": "0", 
-            "REquipMent": "9", 
-            "RUserNum": "12", 
-            "TaskID": "b51d7314-68ff-4083-a734-050d4db74475", 
-            "Type": "1", 
-            "id": "tmp_1544179256381", 
-            "site": "z16-1#桩基_桩基_桩基"
-        }, 
-        {
             "CompletePercent": "10.00", 
             "IsDelete": false, 
             "PEndDate": "2018/12/19", 
             "PEquipMent": "0", 
             "PStartDate": "2018/12/7", 
             "PUserNum": "0", 
-            "REquipMent": "8", 
-            "RUserNum": "13", 
+            "REquipMent": "12", 
+            "RUserNum": "10", 
             "TaskID": "fb155485-b7fd-4cbf-a84a-0d742f189c78", 
             "Type": "1", 
-            "id": "tmp_1544179256381", 
+            "id": "tmp_1544254492178", 
             "site": "z16-2#桩基_桩基_桩基"
         }, 
         {
             "CompletePercent": "10", 
             "IsDelete": true, 
-            "PEndDate": "2018-12-07", 
-            "PEquipMent": "9", 
+            "PEndDate": "2018-12-08", 
+            "PEquipMent": "12", 
             "PStartDate": "2018-12-01", 
-            "PUserNum": "12", 
-            "REquipMent": "9", 
-            "RUserNum": "11", 
-            "id": "tmp_1544179289195", 
-            "site": "自定义任务"
+            "PUserNum": "10", 
+            "REquipMent": "13", 
+            "RUserNum": "10", 
+            "id": "tmp_1544254594544", 
+            "site": "自定义部位"
         }
     ], 
     "R_Construction_logFileModelList": [
         {
             "filename": "图片1", 
-            "filepath": "/uploadFile/attachment/EF_20181207_184334614.png", 
+            "filepath": "/uploadFile/attachment/EF_20181208_153616772.png", 
             "filetype": ".png"
         }, 
         {
             "filename": "", 
-            "filepath": "/uploadFile/attachment/EF_20181207_184334613.png", 
+            "filepath": "/uploadFile/attachment/EF_20181208_153616772.png", 
             "filetype": ".png"
         }, 
         {
             "filename": "附件3", 
-            "filepath": "/uploadFile/attachment/EF_20181207_184334613.png", 
+            "filepath": "/uploadFile/attachment/EF_20181208_153616773.jpg", 
+            "filetype": ".jpg"
+        }, 
+        {
+            "filename": "", 
+            "filepath": "/uploadFile/attachment/EF_20181208_153616772.png", 
             "filetype": ".png"
         }
     ], 
     "R_Construction_logModel": {
-        "AddDate": "2018-12-07", 
+        "AddDate": "2018-12-08", 
         "Adder": "496", 
         "ConstructionUnit": "418", 
         "PostName": "土建", 
@@ -132,13 +124,13 @@ json传中的各字段：
         "Situation": "施工情况", 
         "SituationShow": "施工工作总结", 
         "UserName": "wang2", 
-        "UserNum": "23", 
-        "WeatherName": "雪天", 
-        "equipmentNum": "15", 
+        "UserNum": "10", 
+        "WeatherName": "晴天", 
+        "equipmentNum": "12", 
         "equipmentShwo": "设备使用情况", 
         "problem": "存在问题", 
-        "rq": "2018-12-07", 
-        "weatherID": "3"
+        "rq": "2018-12-08", 
+        "weatherID": "1"
     }
 }
 ```

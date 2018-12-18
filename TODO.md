@@ -1,6 +1,6 @@
 ## TODO
 
-- 发起协同问题给相关人，平台上相关人未收到，
+- 1 发起协同问题给相关人，平台上相关人未收到，
 
     > 禅道：http://eserver:83/zentao/bug-view-3330.html
     >
@@ -40,7 +40,7 @@
 
 
 
-* 手机端填报的在平台进度填报显示的填报人是数字
+* 2 手机端填报的在平台进度填报显示的填报人是数字
 
 ![](http://eserver:83/zentao/data/upload/1/201812/13163852019380f6.png)
 
@@ -50,7 +50,7 @@
 
 
 
-* 查询分包验工计价台账报错
+* 3 查询分包验工计价台账报错
 
   > [验工计价查询](api/business/CostMng/GetInspectionPriceList.md)
   >
@@ -75,7 +75,7 @@
   ```
 
 
-* 待办、相关事项的问题类型再整理下之前的对不上
+* 4 待办、相关事项的问题类型再整理下之前的对不上
 
   > [待办事项](api/message/getTODOs.md)   http://117.34.118.4:9017/api/AppApi/getTODOs  中的  FlowType
   > [获取相关事项列表](api/message/GetRelevants.md)  http://117.34.118.4:9017/api/AppApi/GetRelevants 中的  Type

@@ -8,6 +8,8 @@
     >
     > api: http://117.34.118.4:9017/api/AppApi/setQualityQuest
 
+      "copyTo": "495",     <----- 这个字段
+
     ``` json
     {
       "userId": "496",
@@ -18,7 +20,7 @@
       "level": "2",
       "desc": "描述啦12",
       "sendTo": "494",
-      "copyTo": "495",     <----- 这个字段
+      "copyTo": "495",   
       "ProTree": "",
       "ProTreeData": "",
       "Post": "",
@@ -56,14 +58,17 @@
   >
   > api http://117.34.118.4:9017/api/AppApi/GetInspectionPriceList
 
+  "unit": "418",  <-  分包单位ID，查询总包时没有
+  "Type": "1",    <-  1分包 0总包
+
   ``` json
   {
   "userId": "496",
   "projectId": "61",
   "startTime": "2018-11-01",
   "endTime": "2018-12-18",
-  "unit": "418",  <-  分包单位ID，查询总包时没有
-  "Type": "1",    <-  1分包 0总包
+  "unit": "418", 
+  "Type": "1",   
   "UserType": "2"
   }
   ```

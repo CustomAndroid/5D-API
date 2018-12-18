@@ -6,8 +6,8 @@
 
 进度填报：
 
-* [POST /api/AppApi/getPlanProgressInfo 获取进度日志填报](getPlanProgressInfo.md)
-* [POST /api/AppApi/setPlanSubmitHistory 提交施工日志](setPlanSubmitHistory.md)
+* [POST /api/AppApi/getPlanProgressInfo 获取进度填报](getPlanProgressInfo.md)
+* [POST /api/AppApi/setPlanSubmitHistory 提交施工进度填报](setPlanSubmitHistory.md)
 * [POST /api/AppApi/GetPlanApplData 获取进度审核列表](GetPlanApplData.md)
 * [POST /api/AppApi/getPlanLogById 32.根据ID获取进度填报](getPlanLogById.md)
 * [POST /api/AppApi/getProgressVerifyLogById 38.根据ID获取进度审核详情](getProgressVerifyLogById.md)

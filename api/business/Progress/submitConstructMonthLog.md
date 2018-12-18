@@ -62,76 +62,81 @@ json传中的各字段：
 
 ``` json
 {
+    "ConstructionUnitName": null, 
+    "FilePathAndName": null, 
     "IsCanEdit": true, 
+    "LogDetails": null, 
+    "PlanTaskList": null, 
     "R_Construction_logDetailsModelList": [
         {
-            "CompletePercent": "10.00", 
+            "CompletePercent": "50.00", 
             "IsDelete": false, 
+            "Lid": "", 
             "PEndDate": "2018/12/19", 
             "PEquipMent": "0", 
             "PStartDate": "2018/12/7", 
             "PUserNum": "0", 
-            "REquipMent": "12", 
-            "RUserNum": "10", 
+            "REquipMent": "14", 
+            "RUserNum": "12", 
             "TaskID": "fb155485-b7fd-4cbf-a84a-0d742f189c78", 
             "Type": "1", 
-            "id": "tmp_1544254492178", 
+            "id": "tmp_1545105171305", 
             "site": "z16-2#桩基_桩基_桩基"
         }, 
         {
-            "CompletePercent": "10", 
+            "CompletePercent": "13", 
             "IsDelete": true, 
-            "PEndDate": "2018-12-08", 
+            "Lid": "", 
+            "PEndDate": "2018-12-31", 
             "PEquipMent": "12", 
             "PStartDate": "2018-12-01", 
-            "PUserNum": "10", 
-            "REquipMent": "13", 
-            "RUserNum": "10", 
-            "id": "tmp_1544254594544", 
-            "site": "自定义部位"
+            "PUserNum": "15", 
+            "REquipMent": "12", 
+            "RUserNum": "14", 
+            "TaskID": "", 
+            "Type": "", 
+            "id": "tmp_1545105234793", 
+            "site": "自定义任务"
         }
     ], 
     "R_Construction_logFileModelList": [
         {
+            "Lid": "", 
             "filename": "图片1", 
-            "filepath": "/uploadFile/attachment/EF_20181208_153616772.png", 
-            "filetype": ".png"
+            "filepath": "/uploadFile/attachment/EF_20181218_115343393.jpg", 
+            "filetype": ".jpg", 
+            "id": ""
         }, 
         {
-            "filename": "", 
-            "filepath": "/uploadFile/attachment/EF_20181208_153616772.png", 
-            "filetype": ".png"
-        }, 
-        {
-            "filename": "附件3", 
-            "filepath": "/uploadFile/attachment/EF_20181208_153616773.jpg", 
-            "filetype": ".jpg"
-        }, 
-        {
-            "filename": "", 
-            "filepath": "/uploadFile/attachment/EF_20181208_153616772.png", 
-            "filetype": ".png"
+            "Lid": "", 
+            "filename": "附件2", 
+            "filepath": "/uploadFile/attachment/EF_20181218_115343395.jpg", 
+            "filetype": ".jpg", 
+            "id": ""
         }
     ], 
     "R_Construction_logModel": {
-        "AddDate": "2018-12-08", 
+        "AddDate": "2018-12-18", 
         "Adder": "496", 
         "ConstructionUnit": "418", 
+        "Lid": "0",  //不能为空，没有可传0
         "PostName": "土建", 
         "Postid": "1", 
         "Projectid": "61", 
         "SafetyShow": "安全质量问题", 
         "Situation": "施工情况", 
-        "SituationShow": "施工工作总结", 
+        "SituationShow": "工作总结", 
         "UserName": "wang2", 
-        "UserNum": "10", 
+        "UserNum": "15", 
         "WeatherName": "晴天", 
         "equipmentNum": "12", 
         "equipmentShwo": "设备使用情况", 
         "problem": "存在问题", 
-        "rq": "2018-12-08", 
+        "rq": "2018-12-18", 
         "weatherID": "1"
-    }
+    }, 
+    "jsonYMD": null, 
+    "userType": "2" //不能为空
 }
 ```
 ### 3. 返回参数

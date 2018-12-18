@@ -13,8 +13,8 @@
 
    进度填报：
 
-     1. [POST /api/AppApi/getPlanProgressInfo 获取进度日志填报](Progress/getPlanProgressInfo.md)
-     2. [POST /api/AppApi/setPlanSubmitHistory 提交施工日志](Progress/setPlanSubmitHistory.md)
+     1. [POST /api/AppApi/getPlanProgressInfo 获取进度填报](Progress/getPlanProgressInfo.md)
+     2. [POST /api/AppApi/setPlanSubmitHistory 提交施工进度填报](Progress/setPlanSubmitHistory.md)
      3. [POST /api/AppApi/GetPlanApplData 获取进度审核列表](Progress/GetPlanApplData.md)
      4. [POST /api/AppApi/getPlanLogById 32.根据ID获取进度填报](Progress/getPlanLogById.md)
      5. [POST /api/AppApi/getProgressVerifyLogById 38.根据ID获取进度审核详情](Progress/getProgressVerifyLogById.md)

@@ -62,6 +62,7 @@ body:
 | **reportPersonName** |  String  | 提报人名称                                                   |
 | **enclosureList**    |  String  | 附件，以`附件1:附件1的描述,附件2:附件2的描述`的格式返回，多个附件`,`间隔，附件名与其描述`:`间隔，附件名是相对路径，前面拼接上 [login](../../login/login.md) 中返回的 `WebNetIPAndPort` |
 | **myJurisdiction**   |  String  | 我的审核权限，`0`可审核，`1`仅查看                           |
+| **isReView**         |  String  | 0审核 1反馈                                                  |
 | **LableLocation**    |  String  | 标签三维坐标，调引擎设置标签api                              |
 | **ViewPoint**        |  String  | 视点，设置相机三维空间坐标，调引擎设置视点api                |
 

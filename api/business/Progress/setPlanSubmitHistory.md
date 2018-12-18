@@ -16,6 +16,7 @@ body:
 | ------------------------- | :--------: | :--: | ------------------------------------------------------------ |
 | **ProjectId** | **String** |  Y   | 项目ID(审核人)                                               |
 | **userId** | String | Y | 用户ID |
+| **userName** | String | Y | 用户名字 |
 | **sendTo** | String | Y | 发送人 |
 | **copyTo** | String | N | 抄送人 |
 | **localId** | String | N | android上这个字段是个临时ID，用于区分提交那条日志，不入库，提交成功原样返回 |

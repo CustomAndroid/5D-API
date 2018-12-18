@@ -41,6 +41,7 @@ body:
   "sendTo": "string",
   "copyTo": "string",
   "userId": "string",
+  "userName": "string",
   "localId": "string",
   "PlanType": "string",
   "ProjectId": "string",

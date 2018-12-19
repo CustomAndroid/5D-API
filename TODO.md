@@ -3,11 +3,11 @@
 
 * 2 手机端填报的在平台进度填报显示的填报人是数字
 
-![](http://eserver:83/zentao/data/upload/1/201812/13163852019380f6.png)
+  ![](http://eserver:83/zentao/data/upload/1/201812/13163852019380f6.png)
 
-> 禅道 [http://eserver:83/zentao/bug-view-3327.html](http://eserver:83/zentao/bug-view-3327.html)
->
-> [提交施工进度填报](api/business/Progress/setPlanSubmitHistory.md)
+    > 禅道 [http://eserver:83/zentao/bug-view-3327.html](http://eserver:83/zentao/bug-view-3327.html)
+    >
+    > [提交施工进度填报](api/business/Progress/setPlanSubmitHistory.md)
 
 
 * 4 待办、相关事项的问题类型再整理下之前的对不上

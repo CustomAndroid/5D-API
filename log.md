@@ -28,6 +28,6 @@
 <!--sec data-title="2018-12-18" data-id="20181218" data-show=true ces-->
 
 - [U] 更新**[施工日志提交](api/business/Progress/submitConstructMonthLog.md)**，已调通
-- [U] 更新**[提交施工进度填报](api/business/Progress/setPlanSubmitHistory.md)**,添加一个传入参数 `userName`。
+- [U] 更新**[提交施工进度填报](api/business/Progress/setPlanSubmitHistory.md)**，添加一个传入参数 `userName`。
 
 <!--endsec-->

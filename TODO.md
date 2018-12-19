@@ -1,5 +1,6 @@
 ## TODO
 
+
 * 2 手机端填报的在平台进度填报显示的填报人是数字
 
 ![](http://eserver:83/zentao/data/upload/1/201812/13163852019380f6.png)
@@ -8,25 +9,32 @@
 >
 > [提交施工进度填报](api/business/Progress/setPlanSubmitHistory.md)
 
+
 * 4 待办、相关事项的问题类型再整理下之前的对不上
 
   > [待办事项](api/message/getTODOs.md)   [http://117.34.118.4:9017/api/AppApi/getTODOs](http://117.34.118.4:9017/api/AppApi/getTODOs)  中的  FlowType
   >
-  > [获取相关事项列表](api/message/GetRelevants.md)  [http://117.34.118.4:9017/api/AppApi/GetRelevants](http://117.34.118.4:9017/api/AppApi/GetRelevants) 中的  Type
   >
-  > [获取相关事项列表](api/message/GetRelevants.md)  [http://117.34.118.4:9017/api/AppApi/GetRelevants](http://117.34.118.4:9017/api/AppApi/GetRelevants) 中的  Type
+  > [获取相关事项列表](api/message/GetRelevants.md)  http://117.34.118.4:9017/api/AppApi/GetRelevants 中的  Type
   >
-  > ​
 
-* 发起问题后，相关人查询问题列表其审核权限为1，不能反馈
+* 消息未读、未处理数目与实际未读未处理数目不一致，通知公告可能没有过滤已撤回的公告（4D中出现过）
 
-  > 发起问题接口 [问题提报](api/business/Problem/setQualityQuest.md)
+  >相关接口api：
   >
-  > api: [http://117.34.118.4:9017/api/AppApi/setQualityQuest](http://117.34.118.4:9017/api/AppApi/setQualityQuest)
+  >[获取未读未处理消息数](api/message/GetMessageNum.md)
+
+* 发起问题，相关人查询问题列表其审核权限为1，不能反馈
+
+  >发起问题接口 [问题提报](api/business/Problem/setQualityQuest.md)
   >
-  > 查询审核列表 api:[http://117.34.118.4:9017/api/AppApi/getQualityQuesApplList](http://117.34.118.4:9017/api/AppApi/getQualityQuesApplList)
+  >api: http://117.34.118.4:9017/api/AppApi/setQualityQuest
   >
-  > [查询问题审核列表](api/business/Problem/getQualityQuesApplList.md)
+  >
+  >
+  >查询审核列表 api:http://117.34.118.4:9017/api/AppApi/getQualityQuesApplList
+  >
+  >[查询问题审核列表](api/business/Problem/getQualityQuesApplList.md)
 
   myJurisdiction     String  我的审核权限，`0`可审核/反馈，`1`仅查看
 
@@ -34,7 +42,7 @@
 
   传入参数：
 
-  ```json
+  ``` json
   {
     "userId": "497",
     "pageIndex": "1",
@@ -47,6 +55,8 @@
     "qid": ""
   }
   ```
+
+
 
 ​
 

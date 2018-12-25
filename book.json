@@ -76,8 +76,8 @@
 			]
 		},
 		"tbfed-pagefooter": {
-			"copyright": "Copyright &copy <a target='view_window' href='https://sogrey.github.io/'>Sogrey</a> 2018,",
-			"modify_label": "    使用中遇到问题？<a target='view_window' href='https://github.com/Sogrey/5D-API/issues/new?template=issues.md'>提个Issue</a>,最后修订时间：",
+			"copyright": "Copyright &copy <b><a target='view_window' href='https://sogrey.github.io/'>Sogrey</a></b> 2018,",
+			"modify_label": "    使用中遇到问题？<b><a target='view_window' href='https://github.com/Sogrey/5D-API/issues/new?template=issues.md'>提个Issue</a></b>,最后修订时间：",
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		}
 	},

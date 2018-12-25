@@ -56,9 +56,23 @@
   }
   ```
 
+* 新增浙江建科院项目部分接口：
+
+  [查询关键路径延期预警 getDelayWarningList](api/business/Progress/getDelayWarningList.md)
+
+  [进度查询 getPlanSchedule](api/business/Progress/getPlanSchedule.md)
+
+  [计划审核 getPlanAuditList](api/business/Progress/getPlanAuditList.md)
+
+  [查询计划版本对比 getPlanVersionDiff](api/business/Progress/getPlanVersionDiff.md)
+
+  [获取进度沙盘-差异分析 getDifferenceAnalysis](api/bim/getDifferenceAnalysis.md)
+
+  [获取进度沙盘-计划模拟 getPlanningSimulation](api/bim/getPlanningSimulation.md)
+
+  [获取进度沙盘-形象进度 getGraphicProgress](api/bim/getGraphicProgress.md)
 
 
-​
 
 ### 记录留用
 

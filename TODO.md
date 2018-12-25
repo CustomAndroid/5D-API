@@ -66,9 +66,9 @@
 
   [查询计划版本对比 getPlanVersionDiff](api/business/Progress/getPlanVersionDiff.md)
 
-  [获取进度沙盘-差异分析 getDifferenceAnalysis](api/bim/getDifferenceAnalysis.md)
+  ~~[获取进度沙盘-差异分析 getDifferenceAnalysis](api/bim/getDifferenceAnalysis.md)~~
 
-  [获取进度沙盘-计划模拟 getPlanningSimulation](api/bim/getPlanningSimulation.md)
+  ~~[获取进度沙盘-计划模拟 getPlanningSimulation](api/bim/getPlanningSimulation.md)~~
 
   [获取进度沙盘-形象进度 getGraphicProgress](api/bim/getGraphicProgress.md)
 

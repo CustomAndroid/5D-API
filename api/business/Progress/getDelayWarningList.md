@@ -17,6 +17,8 @@ body:
 | **ProjectId** | **String** |  Y   | 项目ID(审核人)                                               |
 | **userId** | String | Y | 用户ID |
 | **type** | String | Y | 预警类型（0开工延期提醒，1开工延期预警，2完工延期提醒，3完工延期预警） |
+| **pageIndex** | String | Y | 页码，从1开始 |
+| **pageSize** | String | Y | 每页条数，默认20 |
 
 示例:
 
@@ -24,7 +26,9 @@ body:
 {
   "ProjectId": "",
   "userId": "string",
-  "type":"0"
+  "type":"0",
+  "pageIndex":"1",
+  "pageSize":"20"
 }
 ```
 ### 3. 返回参数

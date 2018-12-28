@@ -56,13 +56,19 @@
   }
   ```
 
+
+
+
+
 * 新增浙江建科院项目部分接口：
 
   [查询关键路径延期预警 getDelayWarningList](api/business/Progress/getDelayWarningList.md)
 
   [进度查询 getPlanSchedule](api/business/Progress/getPlanSchedule.md)
 
-  [计划审核 getPlanAuditList](api/business/Progress/getPlanAuditList.md)
+  [计划审核列表 getPlanAuditList](api/business/Progress/getPlanAuditList.md)
+
+  [计划审核 submitPlanAudit](api/business/Progress/submitPlanAudit.md)
 
   [查询计划版本对比 getPlanVersionDiff](api/business/Progress/getPlanVersionDiff.md)
 

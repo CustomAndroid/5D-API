@@ -1,10 +1,10 @@
 ---
-name: Issue 模板
-about: 提issue请注明api地址，参数，返回结果，详细描述问题以便我们能够复现并修复它，tks。                                 
-
+name: 问题模板
+about: 提issue请注明api地址，参数，返回结果，详细描述问题以便我们能够复现并修复它，tks.  
 ---
 
-**url**:
-**params**:
-**return**:
-**desc**:
+**url**: [链接地址]
+**params**: [传入参数]
+**return**: [返回结果]
+**desc**: [问题描述]
+

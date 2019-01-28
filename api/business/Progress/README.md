@@ -21,3 +21,11 @@
 * [POST /api/AppApi/submitConstructMonthLog 84.提交施工日志](submitConstructMonthLog.md)
 * [POST /api/AppApi/GetconstructionSites 查询具体日期施工部位列表](GetconstructionSites.md)
 
+其他
+
+* [查询关键路径延期预警 getDelayWarningList](getDelayWarningList.md)
+* [进度查询 getPlanSchedule](getPlanSchedule.md)
+* [计划审核列表 getPlanAuditList](getPlanAuditList.md)
+* [计划审核 submitPlanAudit](submitPlanAudit.md)
+* [查询计划版本对比 getPlanVersionDiff](getPlanVersionDiff.md)
+

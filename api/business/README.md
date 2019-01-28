@@ -5,6 +5,7 @@
    1. [POST /api/AppApi/ProjectFileTree  获取资料分类](DocumentMng/ProjectFileTree.md)
    2. [POST /api/AppApi/ProjectFileList 获取项目资料列表](DocumentMng/ProjectFileList.md)
    3. [POST /api/AppApi/ModelFileList FileAttributive:1标示项目资料，2标示构件资料](DocumentMng/ModelFileList.md)
+
 2. [进度管理](Progress/README.md)
 
    施工计划：
@@ -23,10 +24,18 @@
 
    施工日志：
 
-     1. [POST /api/AppApi/GetConstructMonthLogStatus 82.查询施工日志月填报情况](Progress/GetConstructMonthLogStatus.md)
-     2. [POST /api/AppApi/GetConstructMonthLogInfo 83.查询施工日志详情](Progress/GetConstructMonthLogInfo.md)
-     3. [POST /api/AppApi/submitConstructMonthLog 84.提交施工日志](Progress/submitConstructMonthLog.md)
-     4. [POST /api/AppApi/GetconstructionSites 查询具体日期施工部位列表](Progress/GetconstructionSites.md)
+   1. [POST /api/AppApi/GetConstructMonthLogStatus 82.查询施工日志月填报情况](Progress/GetConstructMonthLogStatus.md)
+   2. [POST /api/AppApi/GetConstructMonthLogInfo 83.查询施工日志详情](Progress/GetConstructMonthLogInfo.md)
+   3. [POST /api/AppApi/submitConstructMonthLog 84.提交施工日志](Progress/submitConstructMonthLog.md)
+   4. [POST /api/AppApi/GetconstructionSites 查询具体日期施工部位列表](Progress/GetconstructionSites.md)
+
+   其他
+
+   1. [查询关键路径延期预警 getDelayWarningList](Progress/getDelayWarningList.md)
+   2. [进度查询 getPlanSchedule](Progress/getPlanSchedule.md)
+   3. [计划审核列表 getPlanAuditList](Progress/getPlanAuditList.md)
+   4. [计划审核 submitPlanAudit](Progress/submitPlanAudit.md)
+   5. [查询计划版本对比 getPlanVersionDiff](Progress/getPlanVersionDiff.md)
 
 3. [安全管理](SafeWork/README.md)
 
@@ -63,6 +72,7 @@
    8. [POST /api/AppApi/auditingQualityQues 34.质量问题审核;IsFirst:0代表关闭，1代表审核提交](Problem/auditingQualityQues.md)
    9. POST /api/AppApi/getQualityQuesListItem  根据问题ID获取问题详情 --- 【此接口暂时无用且返回有问题】
    10. [POST /api/AppApi/GetProblemsByGuid 36根据构件ID查询该构件相关的问题列表](Problem/GetProblemsByGuid.md)
+
 5. [材料管理](MaterialMng/README.md) 
 
    6. [POST /api/AppApi/GetPurchaseStandingBookList 62.采购台账查询](MaterialMng/GetPurchaseStandingBookList.md)

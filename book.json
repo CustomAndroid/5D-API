@@ -15,13 +15,16 @@
 		},
 		"gitbook": true
 	},
+	"theme-default": {
+        "showLevel": true
+    },
 	"plugins": [
 		"favicon@^0.0.2",
 		"donate@^1.0.2",
 		"advanced-emoji",
 		"github",
 		"tbfed-pagefooter",
-		"toggle-chapters",
+		"summary", "toggle-chapters", "theme-comscore"
 		"sectionx",
 		"emphasize",
 		"-search","-lunr",

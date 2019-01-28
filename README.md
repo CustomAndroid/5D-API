@@ -28,15 +28,18 @@
     1. [获取未读未处理消息数](api/message/GetMessageNum.md)
 
 7. [电子沙盘](api/bim/README.md)
-      8. [模型更新检查](api/bim/checkModels.md)
-      2. [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
-      3. [查询指定构件ID的属性信息](api/bim/ModelGuidData.md)
+
+      1. [模型更新检查](api/bim/checkModels.md)
+      1. [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
+      1. [查询指定构件ID的属性信息](api/bim/ModelGuidData.md)
+      1. [获取进度沙盘-形象进度](api/bim/getGraphicProgress.md)
 
 8. [业务功能](api/business/README.md)
       1. [资料管理](api/business/DocumentMng/README.md)
          2. [获取资料分类](api/business/DocumentMng/ProjectFileTree.md)
          2. [获取项目资料列表](api/business/DocumentMng/ProjectFileList.md)
          3. [查询指定构件相关资料](api/business/DocumentMng/ModelFileList.md)
+
       2. [进度管理](api/business/Progress/README.md)
          1. [获取/更新项目施工计划及版本](api/business/Progress/getPlanAndVersion.md)
          2. [获取进度填报](api/business/Progress/getPlanProgressInfo.md)
@@ -50,6 +53,15 @@
          10. [查询施工日志详情](api/business/Progress/GetConstructMonthLogInfo.md)
          11. [提交施工日志](api/business/Progress/submitConstructMonthLog.md)
          12. [查询具体日期施工部位列表](api/business/Progress/GetconstructionSites.md)
+
+         其他
+
+         1. [查询关键路径延期预警 getDelayWarningList](api/business/Progress/getDelayWarningList.md)
+         2. [进度查询 getPlanSchedule](api/business/Progress/getPlanSchedule.md)
+         3. [计划审核列表 getPlanAuditList](api/business/Progress/getPlanAuditList.md)
+         4. [计划审核 submitPlanAudit](api/business/Progress/submitPlanAudit.md)
+         5. [查询计划版本对比 getPlanVersionDiff](api/business/Progress/getPlanVersionDiff.md)
+
       3. [安全管理](api/business/SafeWork/README.md)
 
          危险源识别：
@@ -81,6 +93,7 @@
          4. [问题审批处理进度](api/business/Problem/getQualityCheckProcess.md)
          5. [问题审核;IsFirst:0代表关闭，1代表审核提交](api/business/Problem/auditingQualityQues.md)
          6. [根据构件ID查询该构件相关的问题列表](api/business/Problem/GetProblemsByGuid.md)
+
       5. [材料管理](api/business/MaterialMng/README.md) 
          1. [采购台账查询](api/business/MaterialMng/GetPurchaseStandingBookList.md)
          2. [领用台账查询](api/business/MaterialMng/GetUseStandingBookList.md)
@@ -122,8 +135,8 @@
             2. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 
 10. [其他](api/other/README.md)
-      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
-      2. [引擎二次封装简易API](https://sogrey.github.io/3DEngineToolsBox/)
+        1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+        2. [引擎二次封装简易API](https://sogrey.github.io/3DEngineToolsBox/)
 11. [更新日志](log.md)
 
 12. [TODO](TODO.md)

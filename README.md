@@ -135,11 +135,10 @@
             2. [获取库存材料图标数据](api/chart/Material/GetMaterialStockRecord.md)
 
 10. [其他](api/other/README.md)
-        1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
-        2. [引擎二次封装简易API](https://sogrey.github.io/3DEngineToolsBox/)
-11. [更新日志](log.md)
-
-12. [TODO](TODO.md)
+      1. [扫描二维码返回构件集合，以#链接](api/other/GetActorIDsByQrNumber.md)
+      2. [引擎二次封装简易API](https://sogrey.github.io/3DEngineToolsBox/)
+1. [更新日志](log.md)
+2. [TODO](TODO.md)
 
 
 ### 草案

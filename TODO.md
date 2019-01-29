@@ -3,8 +3,6 @@
 
 * 2 手机端填报的在平台进度填报显示的填报人是数字
 
-  ![](http://eserver:83/zentao/data/upload/1/201812/13163852019380f6.png)
-
     > 禅道 [http://eserver:83/zentao/bug-view-3327.html](http://eserver:83/zentao/bug-view-3327.html)
     >
     > [提交施工进度填报](api/business/Progress/setPlanSubmitHistory.md)
@@ -74,6 +72,10 @@
 
   [获取进度沙盘-形象进度 getGraphicProgress](api/bim/getGraphicProgress.md)
 
+  ~~获取进度沙盘-差异分析 getDifferenceAnalysis   api/bim/getDifferenceAnalysis.md~~
+
+  ~~获取进度沙盘-计划模拟 getPlanningSimulation  api/bim/getPlanningSimulation.md~~
+
 
 
 ### 记录留用
@@ -90,6 +92,3 @@ POST /api/AppApi/AddandWorkFlow
 
 
 
-~~获取进度沙盘-差异分析 getDifferenceAnalysis   api/bim/getDifferenceAnalysis.md~~
-
-~~获取进度沙盘-计划模拟 getPlanningSimulation  api/bim/getPlanningSimulation.md~~

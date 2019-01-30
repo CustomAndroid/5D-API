@@ -1,0 +1,2370 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>获取/更新项目施工计划及版本 · 5D-API</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Sogrey">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="getPlanProgressInfo.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+    <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+        <link rel="shortcut icon" href='../../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://sogrey.github.io/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../接口返回通用格式.html">
+            
+                <a href="../../接口返回通用格式.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    接口返回通用格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../token.html">
+            
+                <a href="../../token.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../login/">
+            
+                <a href="../../login/">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    登录，修改密码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../login/login.html">
+            
+                <a href="../../login/login.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../login/changePwd.html">
+            
+                <a href="../../login/changePwd.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    修改密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../project/">
+            
+                <a href="../../project/">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    项目基础数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../project/getProjectInfo.html">
+            
+                <a href="../../project/getProjectInfo.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    项目基本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../project/getBaseData.html">
+            
+                <a href="../../project/getBaseData.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    获取基础数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../project/getOrganizatioNew.html">
+            
+                <a href="../../project/getOrganizatioNew.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    人员组织机构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../project/getSectionList.html">
+            
+                <a href="../../project/getSectionList.html">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    获取标段列表(树级结构 id-pId)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../project/getConstUnitList.html">
+            
+                <a href="../../project/getConstUnitList.html">
+            
+                    
+                        <b>1.5.5.</b>
+                    
+                    获取施工单位列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../message/">
+            
+                <a href="../../message/">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    消息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../message/getTODOs.html">
+            
+                <a href="../../message/getTODOs.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    待办事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../message/getNotices.html">
+            
+                <a href="../../message/getNotices.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    通知公告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../message/updateNotice.html">
+            
+                <a href="../../message/updateNotice.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    通知公告已读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../message/GetWarnings.html">
+            
+                <a href="../../message/GetWarnings.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    获取项目预警列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../message/GetRelevants.html">
+            
+                <a href="../../message/GetRelevants.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    获取相关事项列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../message/GetMessageNum.html">
+            
+                <a href="../../message/GetMessageNum.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    获取未读未处理消息数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../bim/">
+            
+                <a href="../../bim/">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    电子沙盘
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../bim/checkModels.html">
+            
+                <a href="../../bim/checkModels.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    模型更新检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    [业务>资料]查询指定构件相关资料
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../bim/ModelGuidData.html">
+            
+                <a href="../../bim/ModelGuidData.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    查询指定构件ID的属性信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../bim/getGraphicProgress.html">
+            
+                <a href="../../bim/getGraphicProgress.html">
+            
+                    
+                        <b>1.7.4.</b>
+                    
+                    获取进度沙盘-形象进度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    业务功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../DocumentMng/">
+            
+                <a href="../DocumentMng/">
+            
+                    
+                        <b>1.8.1.</b>
+                    
+                    资料管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../DocumentMng/ProjectFileTree.html">
+            
+                <a href="../DocumentMng/ProjectFileTree.html">
+            
+                    
+                        <b>1.8.1.1.</b>
+                    
+                    获取资料分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="../DocumentMng/ProjectFileList.html">
+            
+                <a href="../DocumentMng/ProjectFileList.html">
+            
+                    
+                        <b>1.8.1.2.</b>
+                    
+                    获取项目资料列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="../DocumentMng/ModelFileList.html">
+            
+                <a href="../DocumentMng/ModelFileList.html">
+            
+                    
+                        <b>1.8.1.3.</b>
+                    
+                    查询指定构件相关资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.8.2.</b>
+                    
+                    进度管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.2.1" data-path="getPlanAndVersion.html">
+            
+                <a href="getPlanAndVersion.html">
+            
+                    
+                        <b>1.8.2.1.</b>
+                    
+                    获取/更新项目施工计划及版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="getPlanProgressInfo.html">
+            
+                <a href="getPlanProgressInfo.html">
+            
+                    
+                        <b>1.8.2.2.</b>
+                    
+                    获取进度填报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="setPlanSubmitHistory.html">
+            
+                <a href="setPlanSubmitHistory.html">
+            
+                    
+                        <b>1.8.2.3.</b>
+                    
+                    提交施工进度填报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="GetPlanApplData.html">
+            
+                <a href="GetPlanApplData.html">
+            
+                    
+                        <b>1.8.2.4.</b>
+                    
+                    获取进度审核列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="getPlanLogById.html">
+            
+                <a href="getPlanLogById.html">
+            
+                    
+                        <b>1.8.2.5.</b>
+                    
+                    根据ID获取进度填报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="getProgressVerifyLogById.html">
+            
+                <a href="getProgressVerifyLogById.html">
+            
+                    
+                        <b>1.8.2.6.</b>
+                    
+                    根据ID获取进度审核详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.7" data-path="getFlowInfoLogByLogID.html">
+            
+                <a href="getFlowInfoLogByLogID.html">
+            
+                    
+                        <b>1.8.2.7.</b>
+                    
+                    根据FlowId 查询施工日志审批流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.8" data-path="auditingPlanLog.html">
+            
+                <a href="auditingPlanLog.html">
+            
+                    
+                        <b>1.8.2.8.</b>
+                    
+                    审核施工进度填报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.9" data-path="GetConstructMonthLogStatus.html">
+            
+                <a href="GetConstructMonthLogStatus.html">
+            
+                    
+                        <b>1.8.2.9.</b>
+                    
+                    查询施工日志月填报情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.10" data-path="GetConstructMonthLogInfo.html">
+            
+                <a href="GetConstructMonthLogInfo.html">
+            
+                    
+                        <b>1.8.2.10.</b>
+                    
+                    查询施工日志详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.11" data-path="submitConstructMonthLog.html">
+            
+                <a href="submitConstructMonthLog.html">
+            
+                    
+                        <b>1.8.2.11.</b>
+                    
+                    提交施工日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.12" data-path="GetconstructionSites.html">
+            
+                <a href="GetconstructionSites.html">
+            
+                    
+                        <b>1.8.2.12.</b>
+                    
+                    查询具体日期施工部位列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.13" data-path="getDelayWarningList.html">
+            
+                <a href="getDelayWarningList.html">
+            
+                    
+                        <b>1.8.2.13.</b>
+                    
+                    查询关键路径延期预警 getDelayWarningList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.14" data-path="getPlanSchedule.html">
+            
+                <a href="getPlanSchedule.html">
+            
+                    
+                        <b>1.8.2.14.</b>
+                    
+                    进度查询 getPlanSchedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.15" data-path="getPlanAuditList.html">
+            
+                <a href="getPlanAuditList.html">
+            
+                    
+                        <b>1.8.2.15.</b>
+                    
+                    计划审核列表 getPlanAuditList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.16" data-path="submitPlanAudit.html">
+            
+                <a href="submitPlanAudit.html">
+            
+                    
+                        <b>1.8.2.16.</b>
+                    
+                    计划审核 submitPlanAudit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.17" data-path="getPlanVersionDiff.html">
+            
+                <a href="getPlanVersionDiff.html">
+            
+                    
+                        <b>1.8.2.17.</b>
+                    
+                    查询计划版本对比 getPlanVersionDiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../SafeWork/">
+            
+                <a href="../SafeWork/">
+            
+                    
+                        <b>1.8.3.</b>
+                    
+                    安全管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../SafeWork/getHazardIdentificationAuditList.html">
+            
+                <a href="../SafeWork/getHazardIdentificationAuditList.html">
+            
+                    
+                        <b>1.8.3.1.</b>
+                    
+                    危险源识别审核列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../SafeWork/getHazardIdentificationInfo.html">
+            
+                <a href="../SafeWork/getHazardIdentificationInfo.html">
+            
+                    
+                        <b>1.8.3.2.</b>
+                    
+                    危险源识别详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="../SafeWork/AuditingHazardDistinguish.html">
+            
+                <a href="../SafeWork/AuditingHazardDistinguish.html">
+            
+                    
+                        <b>1.8.3.3.</b>
+                    
+                    危险源识别审核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="../SafeWork/GetHazardIdentificationVerificationProcess.html">
+            
+                <a href="../SafeWork/GetHazardIdentificationVerificationProcess.html">
+            
+                    
+                        <b>1.8.3.4.</b>
+                    
+                    查询危险源识别详情+审核流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="../SafeWork/GetHazardSourceDistinguishLog.html">
+            
+                <a href="../SafeWork/GetHazardSourceDistinguishLog.html">
+            
+                    
+                        <b>1.8.3.5.</b>
+                    
+                    查询危险源识别台账列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="../SafeWork/GetHazardMonitoringTrackingList.html">
+            
+                <a href="../SafeWork/GetHazardMonitoringTrackingList.html">
+            
+                    
+                        <b>1.8.3.6.</b>
+                    
+                    危险源监控跟踪列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.7" data-path="../SafeWork/GetHazardMonitoringTrackingHistoryList.html">
+            
+                <a href="../SafeWork/GetHazardMonitoringTrackingHistoryList.html">
+            
+                    
+                        <b>1.8.3.7.</b>
+                    
+                    危险源监控跟踪历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.8" data-path="../SafeWork/GetHazardMonitoringTrackingHistoryContent.html">
+            
+                <a href="../SafeWork/GetHazardMonitoringTrackingHistoryContent.html">
+            
+                    
+                        <b>1.8.3.8.</b>
+                    
+                    危险源监控跟踪历史详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.9" data-path="../SafeWork/GetSafetyRectificationNoticeList.html">
+            
+                <a href="../SafeWork/GetSafetyRectificationNoticeList.html">
+            
+                    
+                        <b>1.8.3.9.</b>
+                    
+                    获取安全整改通知单列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.10" data-path="../SafeWork/GetSafetyRectificationNoticeProcess.html">
+            
+                <a href="../SafeWork/GetSafetyRectificationNoticeProcess.html">
+            
+                    
+                        <b>1.8.3.10.</b>
+                    
+                    获取安全整改通知单审核流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.11" data-path="../SafeWork/AuditingSafetyRectificationNotice.html">
+            
+                <a href="../SafeWork/AuditingSafetyRectificationNotice.html">
+            
+                    
+                        <b>1.8.3.11.</b>
+                    
+                    整改通知单审核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.12" data-path="../SafeWork/GetHazardSourceMassageLog.html">
+            
+                <a href="../SafeWork/GetHazardSourceMassageLog.html">
+            
+                    
+                        <b>1.8.3.12.</b>
+                    
+                    查询安全隐患整改通知单台账列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.13" data-path="../SafeWork/NewSafetyRectificationNotice.html">
+            
+                <a href="../SafeWork/NewSafetyRectificationNotice.html">
+            
+                    
+                        <b>1.8.3.13.</b>
+                    
+                    根据ID查询/新建安全整改通知单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Problem/">
+            
+                <a href="../Problem/">
+            
+                    
+                        <b>1.8.4.</b>
+                    
+                    问题管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../Problem/getQualityQuesList.html">
+            
+                <a href="../Problem/getQualityQuesList.html">
+            
+                    
+                        <b>1.8.4.1.</b>
+                    
+                    查询问题列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.2" data-path="../Problem/getQualityQuesApplList.html">
+            
+                <a href="../Problem/getQualityQuesApplList.html">
+            
+                    
+                        <b>1.8.4.2.</b>
+                    
+                    查询问题审核列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.3" data-path="../Problem/setQualityQuest.html">
+            
+                <a href="../Problem/setQualityQuest.html">
+            
+                    
+                        <b>1.8.4.3.</b>
+                    
+                    问题提报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.4" data-path="../Problem/getQualityCheckProcess.html">
+            
+                <a href="../Problem/getQualityCheckProcess.html">
+            
+                    
+                        <b>1.8.4.4.</b>
+                    
+                    问题审批处理进度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.5" data-path="../Problem/auditingQualityQues.html">
+            
+                <a href="../Problem/auditingQualityQues.html">
+            
+                    
+                        <b>1.8.4.5.</b>
+                    
+                    问题审核;IsFirst:0代表关闭，1代表审核提交
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.6" data-path="../Problem/GetProblemsByGuid.html">
+            
+                <a href="../Problem/GetProblemsByGuid.html">
+            
+                    
+                        <b>1.8.4.6.</b>
+                    
+                    根据构件ID查询该构件相关的问题列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../MaterialMng/">
+            
+                <a href="../MaterialMng/">
+            
+                    
+                        <b>1.8.5.</b>
+                    
+                    材料管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1" data-path="../MaterialMng/GetPurchaseStandingBookList.html">
+            
+                <a href="../MaterialMng/GetPurchaseStandingBookList.html">
+            
+                    
+                        <b>1.8.5.1.</b>
+                    
+                    采购台账查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.2" data-path="../MaterialMng/GetUseStandingBookList.html">
+            
+                <a href="../MaterialMng/GetUseStandingBookList.html">
+            
+                    
+                        <b>1.8.5.2.</b>
+                    
+                    领用台账查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.3" data-path="../MaterialMng/submitPurchase.html">
+            
+                <a href="../MaterialMng/submitPurchase.html">
+            
+                    
+                        <b>1.8.5.3.</b>
+                    
+                    材料采购提报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.4" data-path="../MaterialMng/submitMaterialUse.html">
+            
+                <a href="../MaterialMng/submitMaterialUse.html">
+            
+                    
+                        <b>1.8.5.4.</b>
+                    
+                    材料领用提报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.5" data-path="../MaterialMng/getMaterialTypeList.html">
+            
+                <a href="../MaterialMng/getMaterialTypeList.html">
+            
+                    
+                        <b>1.8.5.5.</b>
+                    
+                    材料类别 – 采购领用时的材料清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.6" data-path="../MaterialMng/getPurchaseMaterialList.html">
+            
+                <a href="../MaterialMng/getPurchaseMaterialList.html">
+            
+                    
+                        <b>1.8.5.6.</b>
+                    
+                    材料采购提报选择材料列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.7" data-path="../MaterialMng/getUseMaterialList.html">
+            
+                <a href="../MaterialMng/getUseMaterialList.html">
+            
+                    
+                        <b>1.8.5.7.</b>
+                    
+                    材料领用提报选择材料清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../CostMng/">
+            
+                <a href="../CostMng/">
+            
+                    
+                        <b>1.8.6.</b>
+                    
+                    成本管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.1" data-path="../CostMng/GetContracts.html">
+            
+                <a href="../CostMng/GetContracts.html">
+            
+                    
+                        <b>1.8.6.1.</b>
+                    
+                    合同查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.2" data-path="../CostMng/GetInspectionPriceList.html">
+            
+                <a href="../CostMng/GetInspectionPriceList.html">
+            
+                    
+                        <b>1.8.6.2.</b>
+                    
+                    验工计价查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.3" data-path="../CostMng/GetInspectionPriceContentList.html">
+            
+                <a href="../CostMng/GetInspectionPriceContentList.html">
+            
+                    
+                        <b>1.8.6.3.</b>
+                    
+                     验工计价明细
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.4" data-path="../CostMng/GetChangeBook.html">
+            
+                <a href="../CostMng/GetChangeBook.html">
+            
+                    
+                        <b>1.8.6.4.</b>
+                    
+                    变更台账查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6.5" data-path="../CostMng/GetVisaStandingBookList.html">
+            
+                <a href="../CostMng/GetVisaStandingBookList.html">
+            
+                    
+                        <b>1.8.6.5.</b>
+                    
+                    签证台账查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../chart/">
+            
+                <a href="../../chart/">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    统计报表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../chart/Progress/">
+            
+                <a href="../../chart/Progress/">
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    进度相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../../chart/Progress/GetScheduleCompletionRatio.html">
+            
+                <a href="../../chart/Progress/GetScheduleCompletionRatio.html">
+            
+                    
+                        <b>1.9.1.1.</b>
+                    
+                    进度与计划完成比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../../chart/Progress/GetScheduleCompletionRatioCharts.html">
+            
+                <a href="../../chart/Progress/GetScheduleCompletionRatioCharts.html">
+            
+                    
+                        <b>1.9.1.2.</b>
+                    
+                    进度与计划完成比 – 图表数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="../../chart/Progress/GetScheduleVarianceAnalysis.html">
+            
+                <a href="../../chart/Progress/GetScheduleVarianceAnalysis.html">
+            
+                    
+                        <b>1.9.1.3.</b>
+                    
+                    进度差异分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.4" data-path="../../chart/Progress/GetScheduleVarianceAnalysisCharts.html">
+            
+                <a href="../../chart/Progress/GetScheduleVarianceAnalysisCharts.html">
+            
+                    
+                        <b>1.9.1.4.</b>
+                    
+                    进度差异分析报表 – 图表数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.5" data-path="../../chart/Progress/GetUnitFrequencyOfFilling.html">
+            
+                <a href="../../chart/Progress/GetUnitFrequencyOfFilling.html">
+            
+                    
+                        <b>1.9.1.5.</b>
+                    
+                    施工单位进度填报频次
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../chart/Cost/">
+            
+                <a href="../../chart/Cost/">
+            
+                    
+                        <b>1.9.2.</b>
+                    
+                    成本相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../../chart/Cost/GetIncomeStatistics.html">
+            
+                <a href="../../chart/Cost/GetIncomeStatistics.html">
+            
+                    
+                        <b>1.9.2.1.</b>
+                    
+                    获取当月收入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../../chart/Cost/GetIncomeHistory.html">
+            
+                <a href="../../chart/Cost/GetIncomeHistory.html">
+            
+                    
+                        <b>1.9.2.2.</b>
+                    
+                    获取历史收入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="../../chart/Cost/GetExpenditureStatistics.html">
+            
+                <a href="../../chart/Cost/GetExpenditureStatistics.html">
+            
+                    
+                        <b>1.9.2.3.</b>
+                    
+                    获取当月支出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="../../chart/Cost/GetExpenditureHistory.html">
+            
+                <a href="../../chart/Cost/GetExpenditureHistory.html">
+            
+                    
+                        <b>1.9.2.4.</b>
+                    
+                    获取历史支出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.5" data-path="../../chart/Cost/GetProfitStatistics.html">
+            
+                <a href="../../chart/Cost/GetProfitStatistics.html">
+            
+                    
+                        <b>1.9.2.5.</b>
+                    
+                    获取当月利润
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.6" data-path="../../chart/Cost/GetProfitHistory.html">
+            
+                <a href="../../chart/Cost/GetProfitHistory.html">
+            
+                    
+                        <b>1.9.2.6.</b>
+                    
+                    获取历史利润
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../chart/Problem/">
+            
+                <a href="../../chart/Problem/">
+            
+                    
+                        <b>1.9.3.</b>
+                    
+                    问题相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../../chart/Problem/GetStatisticalAnalysisReport.html">
+            
+                <a href="../../chart/Problem/GetStatisticalAnalysisReport.html">
+            
+                    
+                        <b>1.9.3.1.</b>
+                    
+                    问题统计分析报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../chart/Safework/">
+            
+                <a href="../../chart/Safework/">
+            
+                    
+                        <b>1.9.4.</b>
+                    
+                    安全相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="../../chart/Safework/GetRiskSourceRectificationNotice.html">
+            
+                <a href="../../chart/Safework/GetRiskSourceRectificationNotice.html">
+            
+                    
+                        <b>1.9.4.1.</b>
+                    
+                    危险源整改通知单报表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.2" data-path="../../chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.html">
+            
+                <a href="../../chart/Safework/GetTrackingStatisticalOfSecurityPersonnel.html">
+            
+                    
+                        <b>1.9.4.2.</b>
+                    
+                    安全员跟踪统计分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.3" data-path="../../chart/Safework/GetStatisticalAnalysisOfHazardSources.html">
+            
+                <a href="../../chart/Safework/GetStatisticalAnalysisOfHazardSources.html">
+            
+                    
+                        <b>1.9.4.3.</b>
+                    
+                    危险源统计分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../chart/Material/">
+            
+                <a href="../../chart/Material/">
+            
+                    
+                        <b>1.9.5.</b>
+                    
+                    材料相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" data-path="../../chart/Material/GetMaterialIinventoryStatistics.html">
+            
+                <a href="../../chart/Material/GetMaterialIinventoryStatistics.html">
+            
+                    
+                        <b>1.9.5.1.</b>
+                    
+                    材料库存量统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.2" data-path="../../chart/Material/GetMaterialStockRecord.html">
+            
+                <a href="../../chart/Material/GetMaterialStockRecord.html">
+            
+                    
+                        <b>1.9.5.2.</b>
+                    
+                    获取库存材料图标数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../other/">
+            
+                <a href="../../other/">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../other/GetActorIDsByQrNumber.html">
+            
+                <a href="../../other/GetActorIDsByQrNumber.html">
+            
+                    
+                        <b>1.10.1.</b>
+                    
+                    扫描二维码返回构件集合，以#链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../../log.html">
+            
+                <a href="../../../log.html">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../../TODO.html">
+            
+                <a href="../../../TODO.html">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >获取/更新项目施工计划及版本</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x83B7;&#x53D6;&#x66F4;&#x65B0;&#x9879;&#x76EE;&#x65BD;&#x5DE5;&#x8BA1;&#x5212;&#x53CA;&#x7248;&#x672C;">&#x83B7;&#x53D6;/&#x66F4;&#x65B0;&#x9879;&#x76EE;&#x65BD;&#x5DE5;&#x8BA1;&#x5212;&#x53CA;&#x7248;&#x672C;</h2>
+<blockquote>
+<p>&#x7528;&#x4E8E;&#x83B7;&#x53D6;/&#x66F4;&#x65B0;&#x9879;&#x76EE;&#x65BD;&#x5DE5;&#x8BA1;&#x5212;&#x53CA;&#x7248;&#x672C;</p>
+</blockquote>
+<h3 id="1-&#x8BF7;&#x6C42;&#x8BF4;&#x660E;">1. &#x8BF7;&#x6C42;&#x8BF4;&#x660E;</h3>
+<blockquote>
+<p>&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF1A;POST</p>
+<p>&#x8BF7;&#x6C42;URL &#xFF1A;<code>/api/AppApi/getPlanAndVersion</code></p>
+</blockquote>
+<h3 id="2-&#x8BF7;&#x6C42;&#x53C2;&#x6570;">2. &#x8BF7;&#x6C42;&#x53C2;&#x6570;</h3>
+<p>body:</p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th style="text-align:center"><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th style="text-align:center">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Projectid</strong></td>
+<td style="text-align:center"><strong>String</strong></td>
+<td style="text-align:center">Y</td>
+<td>&#x9879;&#x76EE;ID(&#x5BA1;&#x6838;&#x4EBA;)</td>
+</tr>
+</tbody>
+</table>
+<p>&#x793A;&#x4F8B;:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;Projectid&quot;</span>: <span class="hljs-string">&quot;61&quot;</span>
+}
+</code></pre>
+<h3 id="3-&#x8FD4;&#x56DE;&#x53C2;&#x6570;">3. &#x8FD4;&#x56DE;&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th style="text-align:center">&#x5B57;&#x6BB5;&#x7C7B;&#x578B;</th>
+<th>&#x5B57;&#x6BB5;&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code</strong></td>
+<td style="text-align:center">string</td>
+<td>0&#xFF1A;&#x6210;&#x529F; &#xFF1B;&#x5176;&#x4ED6;&#xFF1A;&#x5931;&#x8D25;</td>
+</tr>
+<tr>
+<td><strong>CodeMsg</strong></td>
+<td style="text-align:center">String</td>
+<td>&#x5931;&#x8D25;&#x65F6;&#x539F;&#x56E0;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td><strong>TaskID</strong></td>
+<td style="text-align:center"></td>
+<td>&#x8BA1;&#x5212;&#x4EFB;&#x52A1;ID&#xFF08;&#x53EF;&#x67E5;&#x8BE2;&#x6A21;&#x578B;ID&#x548C;&#x540D;&#x79F0;&#x7528;&#x4E8E;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#xFF0C;&#x6A21;&#x578B;&#x52A0;&#x8F7D;&#x5B8C;&#x8C03;&#x7528;&#x5F15;&#x64CE;api<code>SetActorColor(GUIDS,RED,GREEN,BLUE)</code>&#x8BBE;&#x7F6E;&#x6784;&#x4EF6;&#x989C;&#x8272;&#x4EE5;&#x6807;&#x8BC6;&#xFF0C;&#x6216;&#x8C03;&#x7528;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;api<a href="https://github.com/Sogrey/3DEngineToolsBox/blob/master/3DEngineToolsBoxHandbook.md#setActorsColor" target="_blank"><code>setActorsColor(guids, r, g, b)</code></a>&#x8BBE;&#x7F6E;&#xFF09;,&#x5176;&#x4E2D;<code>GUID</code>&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x4E2D;&#x7684;GUID&#x2193;</td>
+</tr>
+<tr>
+<td><strong>TaskName</strong></td>
+<td style="text-align:center"></td>
+<td>&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td><strong>ParentID</strong></td>
+<td style="text-align:center"></td>
+<td>&#x7236;&#x8282;&#x70B9;ID</td>
+</tr>
+<tr>
+<td><strong>GuId</strong></td>
+<td style="text-align:center"></td>
+<td>&#x8BE5;&#x8BA1;&#x5212;&#x5173;&#x8054;&#x7684;&#x6784;&#x4EF6;ID&#xFF08;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x7A7A;&#xFF09;</td>
+</tr>
+<tr>
+<td><strong>PStartDate</strong></td>
+<td style="text-align:center"></td>
+<td>&#x8BA1;&#x5212;&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td><strong>PEndDate</strong></td>
+<td style="text-align:center"></td>
+<td>&#x8BA1;&#x5212;&#x622A;&#x6B62;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td><strong>RStartDate</strong></td>
+<td style="text-align:center"></td>
+<td>&#x5B9E;&#x9645;&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td><strong>REndDate</strong></td>
+<td style="text-align:center"></td>
+<td>&#x5B9E;&#x9645;&#x622A;&#x6B62;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td><strong>TaskPro</strong></td>
+<td style="text-align:center"></td>
+<td>&#x5B8C;&#x6210;&#x767E;&#x5206;&#x6BD4;</td>
+</tr>
+<tr>
+<td><strong>UserNumber</strong></td>
+<td style="text-align:center"></td>
+<td>&#x4EBA;&#x6570;</td>
+</tr>
+<tr>
+<td><strong>EquipmentShow</strong></td>
+<td style="text-align:center"></td>
+<td>&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td><strong>MaterialShow</strong></td>
+<td style="text-align:center"></td>
+<td>&#x6750;&#x6599;</td>
+</tr>
+<tr>
+<td><strong>TaskDeys</strong></td>
+<td style="text-align:center"></td>
+<td>&#x5DE5;&#x671F;</td>
+</tr>
+<tr>
+<td><strong>OrgName</strong></td>
+<td style="text-align:center"></td>
+<td>&#x53C2;&#x5EFA;&#x65BD;&#x5DE5;&#x5355;&#x4F4D;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8FD4;&#x56DE;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">0</span>, 
+    <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;OK&quot;</span>, 
+    <span class="hljs-string">&quot;Datas&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;d2a301c9-93c9-477f-bc9b-bc878e1a67a5&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;&#x9A6C;&#x5CAD;&#x6CB3;&#x5927;&#x6865;&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2017/9/1 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2022/9/1 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;2017/9/1 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;2018/9/19 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">21.91</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">502</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">1826</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;e2a87700-0212-41f9-a140-4beeab00c0b0&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;&#x4E3B;&#x6865;&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;d2a301c9-93c9-477f-bc9b-bc878e1a67a5&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2017/9/1 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2020/3/2 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;2017/9/1 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;2018/9/19 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">43.81</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">913</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;f1f8e1af-d906-4ccb-8b04-1745600d9702&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;&#x6807;&#x9AD8; 12&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;e2a87700-0212-41f9-a140-4beeab00c0b0&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2018/10/9 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2018/11/29 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">51</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;8c3af9a7-c080-4f74-a601-3ecc677f525c&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;&#x6807;&#x9AD8; 13&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;e2a87700-0212-41f9-a140-4beeab00c0b0&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2018/11/29 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2019/1/19 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">51</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;6e465053-478e-4946-aa34-b9d921c79452&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;&#x5E38;&#x89C4;&#x6A21;&#x578B;&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;f1f8e1af-d906-4ccb-8b04-1745600d9702&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2018/10/9 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2018/11/29 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">51</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;7d4ba867-f445-4d75-8f36-e7db1444ebee&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;&#x5E38;&#x89C4;&#x6A21;&#x578B;&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;8c3af9a7-c080-4f74-a601-3ecc677f525c&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2018/11/29 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2019/1/19 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">51</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;c7702e97-fd1d-4c8d-a2c5-994ef7c986a9&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;z18-1#&#x6869;&#x57FA;_&#x6869;&#x57FA;_&#x6869;&#x57FA;&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;6e465053-478e-4946-aa34-b9d921c79452&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;599_599746&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2018/11/2 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2018/11/8 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">6</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }, 
+        {
+            <span class="hljs-string">&quot;TaskID&quot;</span>: <span class="hljs-string">&quot;1f84b5d1-0ee7-4b50-a5f8-bbceef789005&quot;</span>, 
+            <span class="hljs-string">&quot;TaskName&quot;</span>: <span class="hljs-string">&quot;z18-2#&#x6869;&#x57FA;_&#x6869;&#x57FA;_&#x6869;&#x57FA;&quot;</span>, 
+            <span class="hljs-string">&quot;ParentID&quot;</span>: <span class="hljs-string">&quot;6e465053-478e-4946-aa34-b9d921c79452&quot;</span>, 
+            <span class="hljs-string">&quot;GuId&quot;</span>: <span class="hljs-string">&quot;599_600274&quot;</span>, 
+            <span class="hljs-string">&quot;PStartDate&quot;</span>: <span class="hljs-string">&quot;2018/11/8 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;PEndDate&quot;</span>: <span class="hljs-string">&quot;2018/11/15 0:00:00&quot;</span>, 
+            <span class="hljs-string">&quot;RStartDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;REndDate&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TaskPro&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;UserNumber&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;EquipmentShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;MaterialShow&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;Technology&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, 
+            <span class="hljs-string">&quot;TypeInt&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskType&quot;</span>: <span class="hljs-number">0</span>, 
+            <span class="hljs-string">&quot;TaskDeys&quot;</span>: <span class="hljs-number">7</span>, 
+            <span class="hljs-string">&quot;OrgName&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x4E8C;&#x516C;&#x53F8;,&#x4E2D;&#x94C1;&#x5341;&#x4E8C;&#x5C40;&#x7B2C;&#x56DB;&#x516C;&#x53F8;&quot;</span>, 
+            <span class="hljs-string">&quot;children&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-literal">null</span>, 
+            <span class="hljs-string">&quot;ModelName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }
+    ]
+}
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; <b><a target="_blank" href="https://sogrey.github.io/">Sogrey</a></b> 2018, all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">    &#x4F7F;&#x7528;&#x4E2D;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF1F;<b><a target="_blank" href="https://github.com/Sogrey/5D-API/issues/new?template=issues.md">&#x63D0;&#x4E2A;Issue</a></b>,&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-01-29 10:56:46
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 进度管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="getPlanProgressInfo.html" class="navigation navigation-next " aria-label="Next page: 获取进度填报">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"获取/更新项目施工计划及版本","level":"1.8.2.1","depth":3,"next":{"title":"获取进度填报","level":"1.8.2.2","depth":3,"path":"api/business/Progress/getPlanProgressInfo.md","ref":"api/business/Progress/getPlanProgressInfo.md","articles":[]},"previous":{"title":"进度管理","level":"1.8.2","depth":2,"path":"api/business/Progress/README.md","ref":"api/business/Progress/README.md","articles":[{"title":"获取/更新项目施工计划及版本","level":"1.8.2.1","depth":3,"path":"api/business/Progress/getPlanAndVersion.md","ref":"api/business/Progress/getPlanAndVersion.md","articles":[]},{"title":"获取进度填报","level":"1.8.2.2","depth":3,"path":"api/business/Progress/getPlanProgressInfo.md","ref":"api/business/Progress/getPlanProgressInfo.md","articles":[]},{"title":"提交施工进度填报","level":"1.8.2.3","depth":3,"path":"api/business/Progress/setPlanSubmitHistory.md","ref":"api/business/Progress/setPlanSubmitHistory.md","articles":[]},{"title":"获取进度审核列表","level":"1.8.2.4","depth":3,"path":"api/business/Progress/GetPlanApplData.md","ref":"api/business/Progress/GetPlanApplData.md","articles":[]},{"title":"根据ID获取进度填报","level":"1.8.2.5","depth":3,"path":"api/business/Progress/getPlanLogById.md","ref":"api/business/Progress/getPlanLogById.md","articles":[]},{"title":"根据ID获取进度审核详情","level":"1.8.2.6","depth":3,"path":"api/business/Progress/getProgressVerifyLogById.md","ref":"api/business/Progress/getProgressVerifyLogById.md","articles":[]},{"title":"根据FlowId 查询施工日志审批流程","level":"1.8.2.7","depth":3,"path":"api/business/Progress/getFlowInfoLogByLogID.md","ref":"api/business/Progress/getFlowInfoLogByLogID.md","articles":[]},{"title":"审核施工进度填报","level":"1.8.2.8","depth":3,"path":"api/business/Progress/auditingPlanLog.md","ref":"api/business/Progress/auditingPlanLog.md","articles":[]},{"title":"查询施工日志月填报情况","level":"1.8.2.9","depth":3,"path":"api/business/Progress/GetConstructMonthLogStatus.md","ref":"api/business/Progress/GetConstructMonthLogStatus.md","articles":[]},{"title":"查询施工日志详情","level":"1.8.2.10","depth":3,"path":"api/business/Progress/GetConstructMonthLogInfo.md","ref":"api/business/Progress/GetConstructMonthLogInfo.md","articles":[]},{"title":"提交施工日志","level":"1.8.2.11","depth":3,"path":"api/business/Progress/submitConstructMonthLog.md","ref":"api/business/Progress/submitConstructMonthLog.md","articles":[]},{"title":"查询具体日期施工部位列表","level":"1.8.2.12","depth":3,"path":"api/business/Progress/GetconstructionSites.md","ref":"api/business/Progress/GetconstructionSites.md","articles":[]},{"title":"查询关键路径延期预警 getDelayWarningList","level":"1.8.2.13","depth":3,"path":"api/business/Progress/getDelayWarningList.md","ref":"api/business/Progress/getDelayWarningList.md","articles":[]},{"title":"进度查询 getPlanSchedule","level":"1.8.2.14","depth":3,"path":"api/business/Progress/getPlanSchedule.md","ref":"api/business/Progress/getPlanSchedule.md","articles":[]},{"title":"计划审核列表 getPlanAuditList","level":"1.8.2.15","depth":3,"path":"api/business/Progress/getPlanAuditList.md","ref":"api/business/Progress/getPlanAuditList.md","articles":[]},{"title":"计划审核 submitPlanAudit","level":"1.8.2.16","depth":3,"path":"api/business/Progress/submitPlanAudit.md","ref":"api/business/Progress/submitPlanAudit.md","articles":[]},{"title":"查询计划版本对比 getPlanVersionDiff","level":"1.8.2.17","depth":3,"path":"api/business/Progress/getPlanVersionDiff.md","ref":"api/business/Progress/getPlanVersionDiff.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon@^0.0.2","donate@^1.0.2","advanced-emoji","github","tbfed-pagefooter","toggle-chapters","sectionx","emphasize","-search","-lunr","search-pro","splitter","mermaid-gb3","sectionx","chart","copy-code-button","alerts"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <b><a target='view_window' href='https://sogrey.github.io/'>Sogrey</a></b> 2018,","modify_label":"    使用中遇到问题？<b><a target='view_window' href='https://github.com/Sogrey/5D-API/issues/new?template=issues.md'>提个Issue</a></b>,最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"github":{"url":"https://github.com/Sogrey"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://sogrey.github.io/img/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://sogrey.github.io/img/wechatPay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":1},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"alerts":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":false,"google":true,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"toggle-chapters":{}},"github":"Sogrey/5D-API","theme":"default","author":"Sogrey","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"5D-API","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://sogrey.github.io/"},"gitbook":true},"gitbook":"3.2.3","description":"5D协同施工API"},"file":{"path":"api/business/Progress/getPlanAndVersion.md","mtime":"2019-01-29T02:56:46.908Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-29T09:02:46.424Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

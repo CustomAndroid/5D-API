@@ -1,5 +1,205 @@
 ## TODO
 
+### 2019年3月4日
+
+**1 ** http://117.34.118.4:9040/api/AppApi/GetWarnings 查询项目预警列表
+
+**[禅道#3394](http://eserver:83/zentao/bug-view-3394.html)**
+
+参数：
+
+``` json
+{
+  "userId": "609",
+  "UserName": "zong bao",
+  "projectid": "110",
+  "pageIndex": "1",
+  "pageSize": "10"
+}
+```
+
+返回：
+
+``` json
+{
+    "Code": 1, 
+    "CodeMsg": "System.Exception: 列名或所提供值的数目与表定义不匹配。   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)   在 ConstructionProcessManageAPI.Controllers.AppApiController.GetWarnings(Warnings Pmode)", 
+    "Datas": null
+}
+```
+
+> 注: http://117.34.118.4:9017 上正常
+
+**2**  http://117.34.118.4:9040/api/AppApi/GetConstructMonthLogStatus 
+查询施工日志填报状态
+
+**[禅道#3399](http://eserver:83/zentao/bug-view-3399.html)** **[禅道#3405](http://eserver:83/zentao/bug-view-3405.html)**
+
+参数：
+
+``` json
+{
+  "userid": "610",
+  "projectid": "110",
+  "ConstructUnitId": "",
+  "checkDate": "2019-03-04",
+  "UserType": "2"
+}
+```
+返回：
+``` json
+{
+    "Code": 1, 
+    "CodeMsg": "System.Exception: 关键字 'and' 附近有语法错误。   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)   在 ConstructionProcessManageAPI.Controllers.AppApiController.GetConstructMonthLogStatus(tMonthLog Pmodel)", 
+    "Datas": null
+}
+```
+导致上面错误是由于 `ConstructUnitId`传空，`ConstructUnitId`来自于 [获取施工单位列表](https://sogrey.github.io/5D-API/book/api/project/getConstUnitList.html).而查询施工单位列表是传参为：
+``` json
+{
+  "userId": "610"
+}
+```
+返回为空：
+``` json
+{
+  "Code": 0,
+  "CodeMsg": "ok",
+  "Datas": []
+}
+```
+相关bug：**[禅道#3418](http://eserver:83/zentao/bug-view-3418.html)** **[禅道#3401](http://eserver:83/zentao/bug-view-3401.html)** 
+
+**3** http://117.34.118.4:9040/api/AppApi/GetInspectionPriceList 查询验工计价列表
+
+**[禅道#3415 ](http://eserver:83/zentao/bug-view-3415.html)** **[禅道#3406](http://eserver:83/zentao/bug-view-3406.html)**
+
+参数：
+``` json
+{
+  "userId": "609",
+  "projectId": "110",
+  "startTime": "2019-02-01",
+  "endTime": "2019-03-04",
+  "unit": "557",
+  "Type": "1",
+  "UserType": "1"
+}
+```
+返回：
+``` json
+{
+  "Code": 1,
+  "CodeMsg": "System.Exception: ',' 附近有语法错误。\r\n   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)\r\n   在 ConstructionProcessManageAPI.Controllers.AppApiController.GetInspectionPriceList(InspectionPrice Pmode)",
+  "Datas": null
+}
+```
+
+> 注： http://117.34.118.4:9017 上没有报错，但也查询不到数据.
+> 参数如下：
+
+http://117.34.118.4:9017/api/AppApi/GetInspectionPriceList
+
+参数：
+``` json
+  "userId": "524",
+  "projectId": "69",
+  "startTime": "2019-02-01",
+  "endTime": "2019-03-04",
+  "unit": "478",
+  "Type": "1",
+  "UserType": "2"
+```
+返回：
+``` json
+{"Code":0,"CodeMsg":"OK","Datas":[]}
+```
+
+**4** http://117.34.118.4:9040/api/AppApi/submitMaterialUse 材料领用登记 后平台能查到   App查不到
+
+参数：
+``` json
+{
+  "userId": "539",
+  "projectId": "75",
+  "useTime": "2019-03-04",
+  "materialId": "74",
+  "number": "2",
+  "usedPart": "123",
+  "note": "1"
+}
+```
+返回：
+``` json
+{
+  "Code": 0,
+  "CodeMsg": "OK",
+  "Datas": null
+}
+```
+
+http://117.34.118.4:9040/api/AppApi/GetUseStandingBookList 领用登记列表查询
+
+参数：
+``` json
+{
+  "userId": "539",
+  "projectId": "75",
+  "startTime": "2019-02-01",
+  "endTime": "2019-03-04",
+  "companyId": "491",
+  "Keyword": ""
+}
+```
+返回：
+``` json
+{"Code":0,"CodeMsg":"OK","Datas":[]}
+```
+
+**5**  http://117.34.118.4:9040/api/AppApi/submitPurchase 采购登记 
+
+**[禅道#3402](http://eserver:83/zentao/bug-view-3402.html)**
+
+参数：
+``` json
+{
+  "userid": "539",
+  "projectId": "75",
+  "buyTime": "2019-03-04",
+  "materialId": "71",
+  "number": "25",
+  "perParice": "26",
+  "supplyUnit": "fffbb",
+  "note": "xds"
+}
+```
+
+返回：
+``` json
+{
+  "Code": 0,
+  "CodeMsg": "OK",
+  "Datas": null
+}
+```
+
+
+http://117.34.118.4:9040/api/AppApi/GetPurchaseStandingBookList 查询采购台账查不到已添加的采购数据
+
+参数：
+``` json
+{
+  "userId": "539",
+  "projectId": "75",
+  "startTime": "2019-02-01",
+  "endTime": "2019-03-04",
+  "companyId": "491",
+  "Keyword": ""
+}
+```
+
+###  2018年
+
 * ~~2 手机端填报的在平台进度填报显示的填报人是数字~~ \[待回测\]
 
   > 禅道 [http://eserver:83/zentao/bug-view-3327.html](http://eserver:83/zentao/bug-view-3327.html)

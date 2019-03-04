@@ -1946,6 +1946,163 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="todo">TODO</h2>
+<h3 id="2019&#x5E74;3&#x6708;4&#x65E5;">2019&#x5E74;3&#x6708;4&#x65E5;</h3>
+<p><strong>1 </strong> <a href="http://117.34.118.4:9040/api/AppApi/GetWarnings" target="_blank">http://117.34.118.4:9040/api/AppApi/GetWarnings</a> &#x67E5;&#x8BE2;&#x9879;&#x76EE;&#x9884;&#x8B66;&#x5217;&#x8868;</p>
+<p><strong><a href="http://eserver:83/zentao/bug-view-3394.html" target="_blank">&#x7985;&#x9053;#3394</a></strong></p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;609&quot;</span>,
+  <span class="hljs-string">&quot;UserName&quot;</span>: <span class="hljs-string">&quot;zong bao&quot;</span>,
+  <span class="hljs-string">&quot;projectid&quot;</span>: <span class="hljs-string">&quot;110&quot;</span>,
+  <span class="hljs-string">&quot;pageIndex&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-string">&quot;pageSize&quot;</span>: <span class="hljs-string">&quot;10&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">1</span>, 
+    <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;System.Exception: &#x5217;&#x540D;&#x6216;&#x6240;&#x63D0;&#x4F9B;&#x503C;&#x7684;&#x6570;&#x76EE;&#x4E0E;&#x8868;&#x5B9A;&#x4E49;&#x4E0D;&#x5339;&#x914D;&#x3002;   &#x5728; Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)   &#x5728; ConstructionProcessManageAPI.Controllers.AppApiController.GetWarnings(Warnings Pmode)&quot;</span>, 
+    <span class="hljs-string">&quot;Datas&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x6CE8;: <a href="http://117.34.118.4:9017" target="_blank">http://117.34.118.4:9017</a> &#x4E0A;&#x6B63;&#x5E38;</p>
+</blockquote>
+<p><strong>2</strong>  <a href="http://117.34.118.4:9040/api/AppApi/GetConstructMonthLogStatus" target="_blank">http://117.34.118.4:9040/api/AppApi/GetConstructMonthLogStatus</a> 
+&#x67E5;&#x8BE2;&#x65BD;&#x5DE5;&#x65E5;&#x5FD7;&#x586B;&#x62A5;&#x72B6;&#x6001;</p>
+<p><strong><a href="http://eserver:83/zentao/bug-view-3399.html" target="_blank">&#x7985;&#x9053;#3399</a></strong> <strong><a href="http://eserver:83/zentao/bug-view-3405.html" target="_blank">&#x7985;&#x9053;#3405</a></strong></p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userid&quot;</span>: <span class="hljs-string">&quot;610&quot;</span>,
+  <span class="hljs-string">&quot;projectid&quot;</span>: <span class="hljs-string">&quot;110&quot;</span>,
+  <span class="hljs-string">&quot;ConstructUnitId&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+  <span class="hljs-string">&quot;checkDate&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;UserType&quot;</span>: <span class="hljs-string">&quot;2&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">1</span>, 
+    <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;System.Exception: &#x5173;&#x952E;&#x5B57; &apos;and&apos; &#x9644;&#x8FD1;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;   &#x5728; Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)   &#x5728; ConstructionProcessManageAPI.Controllers.AppApiController.GetConstructMonthLogStatus(tMonthLog Pmodel)&quot;</span>, 
+    <span class="hljs-string">&quot;Datas&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<p>&#x5BFC;&#x81F4;&#x4E0A;&#x9762;&#x9519;&#x8BEF;&#x662F;&#x7531;&#x4E8E; <code>ConstructUnitId</code>&#x4F20;&#x7A7A;&#xFF0C;<code>ConstructUnitId</code>&#x6765;&#x81EA;&#x4E8E; <a href="https://sogrey.github.io/5D-API/book/api/project/getConstUnitList.html" target="_blank">&#x83B7;&#x53D6;&#x65BD;&#x5DE5;&#x5355;&#x4F4D;&#x5217;&#x8868;</a>.&#x800C;&#x67E5;&#x8BE2;&#x65BD;&#x5DE5;&#x5355;&#x4F4D;&#x5217;&#x8868;&#x662F;&#x4F20;&#x53C2;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;610&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#x4E3A;&#x7A7A;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;ok&quot;</span>,
+  <span class="hljs-string">&quot;Datas&quot;</span>: []
+}
+</code></pre>
+<p>&#x76F8;&#x5173;bug&#xFF1A;<strong><a href="http://eserver:83/zentao/bug-view-3418.html" target="_blank">&#x7985;&#x9053;#3418</a></strong> <strong><a href="http://eserver:83/zentao/bug-view-3401.html" target="_blank">&#x7985;&#x9053;#3401</a></strong> </p>
+<p><strong>3</strong> <a href="http://117.34.118.4:9040/api/AppApi/GetInspectionPriceList" target="_blank">http://117.34.118.4:9040/api/AppApi/GetInspectionPriceList</a> &#x67E5;&#x8BE2;&#x9A8C;&#x5DE5;&#x8BA1;&#x4EF7;&#x5217;&#x8868;</p>
+<p><strong><a href="http://eserver:83/zentao/bug-view-3415.html" target="_blank">&#x7985;&#x9053;#3415 </a></strong> <strong><a href="http://eserver:83/zentao/bug-view-3406.html" target="_blank">&#x7985;&#x9053;#3406</a></strong></p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;609&quot;</span>,
+  <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;110&quot;</span>,
+  <span class="hljs-string">&quot;startTime&quot;</span>: <span class="hljs-string">&quot;2019-02-01&quot;</span>,
+  <span class="hljs-string">&quot;endTime&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;unit&quot;</span>: <span class="hljs-string">&quot;557&quot;</span>,
+  <span class="hljs-string">&quot;Type&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-string">&quot;UserType&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;System.Exception: &apos;,&apos; &#x9644;&#x8FD1;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;\r\n   &#x5728; Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)\r\n   &#x5728; ConstructionProcessManageAPI.Controllers.AppApiController.GetInspectionPriceList(InspectionPrice Pmode)&quot;</span>,
+  <span class="hljs-string">&quot;Datas&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#xFF1A; <a href="http://117.34.118.4:9017" target="_blank">http://117.34.118.4:9017</a> &#x4E0A;&#x6CA1;&#x6709;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x4E5F;&#x67E5;&#x8BE2;&#x4E0D;&#x5230;&#x6570;&#x636E;.
+&#x53C2;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+</blockquote>
+<p><a href="http://117.34.118.4:9017/api/AppApi/GetInspectionPriceList" target="_blank">http://117.34.118.4:9017/api/AppApi/GetInspectionPriceList</a></p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;524&quot;</span>,
+  <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;69&quot;</span>,
+  <span class="hljs-string">&quot;startTime&quot;</span>: <span class="hljs-string">&quot;2019-02-01&quot;</span>,
+  <span class="hljs-string">&quot;endTime&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;unit&quot;</span>: <span class="hljs-string">&quot;478&quot;</span>,
+  <span class="hljs-string">&quot;Type&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+  <span class="hljs-string">&quot;UserType&quot;</span>: <span class="hljs-string">&quot;2&quot;</span>
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{<span class="hljs-string">&quot;Code&quot;</span>:<span class="hljs-number">0</span>,<span class="hljs-string">&quot;CodeMsg&quot;</span>:<span class="hljs-string">&quot;OK&quot;</span>,<span class="hljs-string">&quot;Datas&quot;</span>:[]}
+</code></pre>
+<p><strong>4</strong> <a href="http://117.34.118.4:9040/api/AppApi/submitMaterialUse" target="_blank">http://117.34.118.4:9040/api/AppApi/submitMaterialUse</a> &#x6750;&#x6599;&#x9886;&#x7528;&#x767B;&#x8BB0; &#x540E;&#x5E73;&#x53F0;&#x80FD;&#x67E5;&#x5230;   App&#x67E5;&#x4E0D;&#x5230;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;539&quot;</span>,
+  <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;75&quot;</span>,
+  <span class="hljs-string">&quot;useTime&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;materialId&quot;</span>: <span class="hljs-string">&quot;74&quot;</span>,
+  <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;2&quot;</span>,
+  <span class="hljs-string">&quot;usedPart&quot;</span>: <span class="hljs-string">&quot;123&quot;</span>,
+  <span class="hljs-string">&quot;note&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;OK&quot;</span>,
+  <span class="hljs-string">&quot;Datas&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<p><a href="http://117.34.118.4:9040/api/AppApi/GetUseStandingBookList" target="_blank">http://117.34.118.4:9040/api/AppApi/GetUseStandingBookList</a> &#x9886;&#x7528;&#x767B;&#x8BB0;&#x5217;&#x8868;&#x67E5;&#x8BE2;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;539&quot;</span>,
+  <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;75&quot;</span>,
+  <span class="hljs-string">&quot;startTime&quot;</span>: <span class="hljs-string">&quot;2019-02-01&quot;</span>,
+  <span class="hljs-string">&quot;endTime&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;companyId&quot;</span>: <span class="hljs-string">&quot;491&quot;</span>,
+  <span class="hljs-string">&quot;Keyword&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{<span class="hljs-string">&quot;Code&quot;</span>:<span class="hljs-number">0</span>,<span class="hljs-string">&quot;CodeMsg&quot;</span>:<span class="hljs-string">&quot;OK&quot;</span>,<span class="hljs-string">&quot;Datas&quot;</span>:[]}
+</code></pre>
+<p><strong>5</strong>  <a href="http://117.34.118.4:9040/api/AppApi/submitPurchase" target="_blank">http://117.34.118.4:9040/api/AppApi/submitPurchase</a> &#x91C7;&#x8D2D;&#x767B;&#x8BB0; </p>
+<p><strong><a href="http://eserver:83/zentao/bug-view-3402.html" target="_blank">&#x7985;&#x9053;#3402</a></strong></p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userid&quot;</span>: <span class="hljs-string">&quot;539&quot;</span>,
+  <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;75&quot;</span>,
+  <span class="hljs-string">&quot;buyTime&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;materialId&quot;</span>: <span class="hljs-string">&quot;71&quot;</span>,
+  <span class="hljs-string">&quot;number&quot;</span>: <span class="hljs-string">&quot;25&quot;</span>,
+  <span class="hljs-string">&quot;perParice&quot;</span>: <span class="hljs-string">&quot;26&quot;</span>,
+  <span class="hljs-string">&quot;supplyUnit&quot;</span>: <span class="hljs-string">&quot;fffbb&quot;</span>,
+  <span class="hljs-string">&quot;note&quot;</span>: <span class="hljs-string">&quot;xds&quot;</span>
+}
+</code></pre>
+<p>&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-string">&quot;CodeMsg&quot;</span>: <span class="hljs-string">&quot;OK&quot;</span>,
+  <span class="hljs-string">&quot;Datas&quot;</span>: <span class="hljs-literal">null</span>
+}
+</code></pre>
+<p><a href="http://117.34.118.4:9040/api/AppApi/GetPurchaseStandingBookList" target="_blank">http://117.34.118.4:9040/api/AppApi/GetPurchaseStandingBookList</a> &#x67E5;&#x8BE2;&#x91C7;&#x8D2D;&#x53F0;&#x8D26;&#x67E5;&#x4E0D;&#x5230;&#x5DF2;&#x6DFB;&#x52A0;&#x7684;&#x91C7;&#x8D2D;&#x6570;&#x636E;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;userId&quot;</span>: <span class="hljs-string">&quot;539&quot;</span>,
+  <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;75&quot;</span>,
+  <span class="hljs-string">&quot;startTime&quot;</span>: <span class="hljs-string">&quot;2019-02-01&quot;</span>,
+  <span class="hljs-string">&quot;endTime&quot;</span>: <span class="hljs-string">&quot;2019-03-04&quot;</span>,
+  <span class="hljs-string">&quot;companyId&quot;</span>: <span class="hljs-string">&quot;491&quot;</span>,
+  <span class="hljs-string">&quot;Keyword&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+}
+</code></pre>
+<h3 id="2018&#x5E74;">2018&#x5E74;</h3>
 <ul>
 <li><p><del>2 &#x624B;&#x673A;&#x7AEF;&#x586B;&#x62A5;&#x7684;&#x5728;&#x5E73;&#x53F0;&#x8FDB;&#x5EA6;&#x586B;&#x62A5;&#x663E;&#x793A;&#x7684;&#x586B;&#x62A5;&#x4EBA;&#x662F;&#x6570;&#x5B57;</del> [&#x5F85;&#x56DE;&#x6D4B;]</p>
 <blockquote>
@@ -2005,7 +2162,7 @@
 <p>POST /api/AppApi/GetProfessionalType 37.&#x83B7;&#x53D6;&#x6A21;&#x578B;&#x4E13;&#x4E1A;&#x7C7B;&#x578B; &#x6811;&#x7EA7;&#x7ED3;&#x6784;</p>
 <p>POST /api/AppApi/AddandWorkFlow</p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; <b><a target="_blank" href="https://sogrey.github.io/">Sogrey</a></b> 2018, all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">    &#x4F7F;&#x7528;&#x4E2D;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF1F;<b><a target="_blank" href="https://github.com/Sogrey/5D-API/issues/new?template=issues.md">&#x63D0;&#x4E2A;Issue</a></b>,&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-01-29 10:56:46
+2019-03-04 16:51:33
 </span></footer>
                                 
                                 </section>
@@ -2045,7 +2202,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"TODO","level":"1.12","depth":1,"previous":{"title":"更新日志","level":"1.11","depth":1,"path":"log.md","ref":"log.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon@^0.0.2","donate@^1.0.2","advanced-emoji","github","tbfed-pagefooter","toggle-chapters","sectionx","emphasize","-search","-lunr","search-pro","splitter","mermaid-gb3","sectionx","chart","copy-code-button","alerts","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <b><a target='view_window' href='https://sogrey.github.io/'>Sogrey</a></b> 2018,","modify_label":"    使用中遇到问题？<b><a target='view_window' href='https://github.com/Sogrey/5D-API/issues/new?template=issues.md'>提个Issue</a></b>,最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"github":{"url":"https://github.com/Sogrey"},"livereload":{},"splitter":{},"search-pro":{},"donate":{"alipay":"https://sogrey.github.io/img/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://sogrey.github.io/img/wechatPay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":1},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"alerts":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":false,"google":true,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"toggle-chapters":{}},"github":"Sogrey/5D-API","theme":"default","author":"Sogrey","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"5D-API","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://sogrey.github.io/"},"gitbook":true},"gitbook":"3.2.3","description":"5D协同施工API"},"file":{"path":"TODO.md","mtime":"2019-01-29T02:56:46.720Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-30T06:06:46.113Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TODO","level":"1.12","depth":1,"previous":{"title":"更新日志","level":"1.11","depth":1,"path":"log.md","ref":"log.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon@^0.0.2","donate@^1.0.2","advanced-emoji","github","tbfed-pagefooter","toggle-chapters","sectionx","emphasize","-search","-lunr","search-pro","splitter","mermaid-gb3","sectionx","chart","copy-code-button","alerts"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <b><a target='view_window' href='https://sogrey.github.io/'>Sogrey</a></b> 2018,","modify_label":"    使用中遇到问题？<b><a target='view_window' href='https://github.com/Sogrey/5D-API/issues/new?template=issues.md'>提个Issue</a></b>,最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"github":{"url":"https://github.com/Sogrey"},"splitter":{},"search-pro":{},"donate":{"alipay":"https://sogrey.github.io/img/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://sogrey.github.io/img/wechatPay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":1},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"alerts":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":false,"google":true,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"chart":{"type":"c3"},"toggle-chapters":{}},"github":"Sogrey/5D-API","theme":"default","author":"Sogrey","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"5D-API","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://sogrey.github.io/"},"gitbook":true},"gitbook":"3.2.3","description":"5D协同施工API"},"file":{"path":"TODO.md","mtime":"2019-03-04T08:51:33.651Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-04T08:53:15.146Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -2097,10 +2254,6 @@
     
         
         <script src="gitbook/gitbook-plugin-alerts/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

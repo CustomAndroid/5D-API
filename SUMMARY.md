@@ -23,6 +23,7 @@
     * [模型更新检查](api/bim/checkModels.md)
     * [业务>资料]查询指定构件相关资料
     * [查询指定构件ID的属性信息](api/bim/ModelGuidData.md)
+    * [查询指定构件ID的自定义属性信息](api/bim/ModelGuidCustomData.md)
     * [获取进度沙盘-形象进度](api/bim/getGraphicProgress.md)
 * [业务功能](api/business/README.md)
     * [资料管理](api/business/DocumentMng/README.md)

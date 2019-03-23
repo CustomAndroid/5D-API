@@ -1,5 +1,11 @@
 ## TODO
 
+### 2019年3月23日
+
+**1** 添加新接口 [查询指定构件ID的自定义属性信息](api/bim/ModelGuidCustomData.md)
+
+ 
+
 ### 2019年3月4日
 
 **1 ** http://117.34.118.4:9040/api/AppApi/GetWarnings 查询项目预警列表
